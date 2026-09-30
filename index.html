@@ -1,0 +1,1993 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1"
+  >
+
+  <title>Front Range Water Pros | Colorado Water Treatment</title>
+
+  <meta
+    name="description"
+    content="Join the Front Range Water Pros priority list for residential water testing, filtration, softening and drinking-water solutions in the Denver metro area."
+  >
+
+  <link
+    rel="canonical"
+    href="https://frontrangewaterpros.com/"
+  >
+
+  <meta property="og:title" content="Front Range Water Pros">
+  <meta
+    property="og:description"
+    content="Water treatment designed around your home, location and actual water conditions."
+  >
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://frontrangewaterpros.com/">
+
+  <meta name="theme-color" content="#08666b">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,500;6..72,600&display=swap"
+    rel="stylesheet"
+  >
+
+  <style>
+    /*
+      Front Range Water Pros
+
+      EDIT BUSINESS SETTINGS NEAR THE BOTTOM OF THIS FILE:
+      Search for "SITE_CONFIG".
+
+      Art direction:
+      Colorado water expertise → calm, local, technical and trustworthy.
+      Palette: warm stone neutrals with deep water-teal.
+      Typography: Newsreader display + Manrope body.
+    */
+
+    :root,
+    [data-theme="light"] {
+      --color-bg: #f6f5f0;
+      --color-surface: #ffffff;
+      --color-surface-2: #efeee8;
+      --color-surface-accent: #e1eeeb;
+      --color-text: #1c2a2a;
+      --color-muted: #526362;
+      --color-faint: #71807f;
+      --color-border: rgba(28, 42, 42, 0.14);
+      --color-divider: rgba(28, 42, 42, 0.10);
+      --color-primary: #08666b;
+      --color-primary-hover: #064f53;
+      --color-primary-active: #043c3f;
+      --color-primary-soft: #d5e8e5;
+      --color-inverse: #ffffff;
+      --color-warning: #8a531f;
+      --color-warning-soft: #f2e5d5;
+      --shadow-sm: 0 2px 8px rgba(37, 49, 46, 0.07);
+      --shadow-md: 0 16px 45px rgba(37, 49, 46, 0.11);
+      --header-bg: rgba(246, 245, 240, 0.90);
+    }
+
+    [data-theme="dark"] {
+      --color-bg: #111817;
+      --color-surface: #17201f;
+      --color-surface-2: #1d2827;
+      --color-surface-accent: #203b39;
+      --color-text: #edf3f1;
+      --color-muted: #b2c1be;
+      --color-faint: #93a5a2;
+      --color-border: rgba(237, 243, 241, 0.14);
+      --color-divider: rgba(237, 243, 241, 0.10);
+      --color-primary: #70c1bd;
+      --color-primary-hover: #8bd0cc;
+      --color-primary-active: #a4dcd8;
+      --color-primary-soft: #203b39;
+      --color-inverse: #10201f;
+      --color-warning: #e1a569;
+      --color-warning-soft: #3b2c20;
+      --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.20);
+      --shadow-md: 0 16px 45px rgba(0, 0, 0, 0.32);
+      --header-bg: rgba(17, 24, 23, 0.90);
+    }
+
+    :root {
+      --font-display: "Newsreader", Georgia, serif;
+      --font-body: "Manrope", Arial, sans-serif;
+
+      --text-xs: clamp(0.75rem, 0.72rem + 0.14vw, 0.875rem);
+      --text-sm: clamp(0.875rem, 0.83rem + 0.20vw, 1rem);
+      --text-base: clamp(1rem, 0.96rem + 0.18vw, 1.125rem);
+      --text-lg: clamp(1.15rem, 1.02rem + 0.55vw, 1.5rem);
+      --text-xl: clamp(1.6rem, 1.25rem + 1.4vw, 2.5rem);
+      --text-2xl: clamp(2.35rem, 1.55rem + 3vw, 4.5rem);
+
+      --space-1: 0.25rem;
+      --space-2: 0.5rem;
+      --space-3: 0.75rem;
+      --space-4: 1rem;
+      --space-5: 1.25rem;
+      --space-6: 1.5rem;
+      --space-8: 2rem;
+      --space-10: 2.5rem;
+      --space-12: 3rem;
+      --space-16: 4rem;
+      --space-20: 5rem;
+      --space-24: 6rem;
+
+      --radius-sm: 0.4rem;
+      --radius-md: 0.65rem;
+      --radius-lg: 1rem;
+      --radius-xl: 1.5rem;
+      --radius-full: 999px;
+
+      --content: 1180px;
+      --content-narrow: 760px;
+
+      --transition: 180ms cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 6rem;
+      -webkit-text-size-adjust: none;
+      text-size-adjust: none;
+    }
+
+    body {
+      min-height: 100vh;
+      color: var(--color-text);
+      background: var(--color-bg);
+      font-family: var(--font-body);
+      font-size: var(--text-base);
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    body.menu-open {
+      overflow: hidden;
+    }
+
+    h1,
+    h2 {
+      font-family: var(--font-display);
+      font-weight: 600;
+      line-height: 1.02;
+      letter-spacing: -0.025em;
+      text-wrap: balance;
+    }
+
+    h3 {
+      font-size: var(--text-lg);
+      line-height: 1.25;
+      text-wrap: balance;
+    }
+
+    p {
+      max-width: 70ch;
+      text-wrap: pretty;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button,
+    input,
+    select,
+    textarea {
+      color: inherit;
+      font: inherit;
+    }
+
+    button {
+      border: 0;
+      cursor: pointer;
+    }
+
+    img,
+    svg {
+      display: block;
+      max-width: 100%;
+    }
+
+    fieldset {
+      border: 0;
+    }
+
+    :focus-visible {
+      outline: 3px solid var(--color-primary);
+      outline-offset: 3px;
+    }
+
+    ::selection {
+      color: var(--color-text);
+      background: var(--color-primary-soft);
+    }
+
+    .skip-link {
+      position: fixed;
+      top: var(--space-4);
+      left: var(--space-4);
+      z-index: 1000;
+      padding: var(--space-3) var(--space-4);
+      color: var(--color-inverse);
+      background: var(--color-primary);
+      border-radius: var(--radius-md);
+      transform: translateY(-160%);
+    }
+
+    .skip-link:focus {
+      transform: translateY(0);
+    }
+
+    .container {
+      width: min(calc(100% - 2rem), var(--content));
+      margin-inline: auto;
+    }
+
+    .narrow {
+      width: min(calc(100% - 2rem), var(--content-narrow));
+      margin-inline: auto;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: var(--space-2);
+      margin-bottom: var(--space-5);
+      color: var(--color-primary);
+      font-size: var(--text-xs);
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .eyebrow::before {
+      width: 1.75rem;
+      height: 1px;
+      background: currentColor;
+      content: "";
+    }
+
+    .section-heading {
+      max-width: 760px;
+      margin-bottom: var(--space-10);
+    }
+
+    .section-heading h2 {
+      margin-bottom: var(--space-4);
+      font-size: var(--text-xl);
+    }
+
+    .section-heading p {
+      color: var(--color-muted);
+    }
+
+    .button {
+      display: inline-flex;
+      min-height: 48px;
+      align-items: center;
+      justify-content: center;
+      gap: var(--space-2);
+      padding: 0.8rem 1.25rem;
+      border: 1px solid transparent;
+      border-radius: var(--radius-md);
+      font-size: var(--text-sm);
+      font-weight: 700;
+      transition:
+        background var(--transition),
+        color var(--transition),
+        border-color var(--transition),
+        transform var(--transition);
+    }
+
+    .button:hover {
+      transform: translateY(-1px);
+    }
+
+    .button:active {
+      transform: translateY(0);
+    }
+
+    .button-primary {
+      color: var(--color-inverse);
+      background: var(--color-primary);
+    }
+
+    .button-primary:hover {
+      background: var(--color-primary-hover);
+    }
+
+    .button-secondary {
+      color: var(--color-text);
+      background: transparent;
+      border-color: var(--color-border);
+    }
+
+    .button-secondary:hover {
+      background: var(--color-surface);
+    }
+
+    .text-link {
+      color: var(--color-primary);
+      font-weight: 700;
+      text-decoration: underline;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 0.25em;
+    }
+
+    .announcement {
+      padding: var(--space-2) var(--space-4);
+      color: var(--color-inverse);
+      background: var(--color-primary);
+      font-size: var(--text-sm);
+      text-align: center;
+    }
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: var(--header-bg);
+      border-bottom: 1px solid var(--color-divider);
+      backdrop-filter: blur(14px);
+    }
+
+    .nav {
+      display: flex;
+      min-height: 72px;
+      align-items: center;
+      justify-content: space-between;
+      gap: var(--space-6);
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: var(--space-3);
+      font-weight: 700;
+      line-height: 1.1;
+    }
+
+    .brand-mark {
+      width: 42px;
+      flex: 0 0 42px;
+      color: var(--color-primary);
+    }
+
+    .brand-name {
+      display: block;
+    }
+
+    .brand-location {
+      display: block;
+      margin-top: var(--space-1);
+      color: var(--color-faint);
+      font-size: var(--text-xs);
+      font-weight: 600;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: var(--space-6);
+      list-style: none;
+    }
+
+    .nav-links a:not(.button) {
+      color: var(--color-muted);
+      font-size: var(--text-sm);
+      font-weight: 600;
+    }
+
+    .nav-links a:not(.button):hover {
+      color: var(--color-primary);
+    }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: var(--space-2);
+    }
+
+    .icon-button,
+    .menu-button {
+      display: inline-flex;
+      width: 46px;
+      height: 46px;
+      align-items: center;
+      justify-content: center;
+      color: var(--color-text);
+      background: transparent;
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-md);
+    }
+
+    .menu-button {
+      display: none;
+    }
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      padding-block: clamp(var(--space-16), 9vw, var(--space-24));
+    }
+
+    .hero::after {
+      position: absolute;
+      top: -18rem;
+      right: -14rem;
+      width: 36rem;
+      height: 36rem;
+      background:
+        radial-gradient(
+          circle,
+          color-mix(in srgb, var(--color-primary) 13%, transparent),
+          transparent 66%
+        );
+      pointer-events: none;
+      content: "";
+    }
+
+    .hero-grid {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      align-items: center;
+      gap: clamp(var(--space-10), 7vw, var(--space-20));
+    }
+
+    .hero-copy h1 {
+      max-width: 850px;
+      margin-bottom: var(--space-6);
+      font-size: var(--text-2xl);
+    }
+
+    .hero-copy h1 span {
+      color: var(--color-primary);
+    }
+
+    .hero-lead {
+      max-width: 650px;
+      margin-bottom: var(--space-8);
+      color: var(--color-muted);
+      font-size: var(--text-lg);
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-3);
+      margin-bottom: var(--space-8);
+    }
+
+    .trust-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-4) var(--space-6);
+      color: var(--color-muted);
+      font-size: var(--text-sm);
+      list-style: none;
+    }
+
+    .trust-list li {
+      display: flex;
+      align-items: center;
+      gap: var(--space-2);
+    }
+
+    .trust-list li::before {
+      width: 7px;
+      height: 7px;
+      background: var(--color-primary);
+      border-radius: 50%;
+      content: "";
+    }
+
+    .hero-panel {
+      position: relative;
+      padding: var(--space-8);
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-xl);
+      box-shadow: var(--shadow-md);
+    }
+
+    .hero-panel-label {
+      margin-bottom: var(--space-6);
+      color: var(--color-primary);
+      font-size: var(--text-xs);
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+
+    .water-profile {
+      display: grid;
+      gap: var(--space-5);
+    }
+
+    .profile-row {
+      display: grid;
+      grid-template-columns: 7rem 1fr;
+      gap: var(--space-4);
+      align-items: center;
+    }
+
+    .profile-row strong {
+      font-size: var(--text-sm);
+    }
+
+    .profile-track {
+      height: 8px;
+      overflow: hidden;
+      background: var(--color-surface-2);
+      border-radius: var(--radius-full);
+    }
+
+    .profile-value {
+      display: block;
+      height: 100%;
+      background: var(--color-primary);
+      border-radius: inherit;
+    }
+
+    .hero-panel-note {
+      margin-top: var(--space-8);
+      padding-top: var(--space-5);
+      color: var(--color-muted);
+      border-top: 1px solid var(--color-divider);
+      font-size: var(--text-sm);
+    }
+
+    .section {
+      padding-block: clamp(var(--space-16), 8vw, var(--space-24));
+    }
+
+    .section-surface {
+      background: var(--color-surface-2);
+    }
+
+    .services-layout {
+      display: grid;
+      gap: var(--space-6);
+    }
+
+    .service-feature {
+      display: flex;
+      min-height: 340px;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: clamp(var(--space-8), 5vw, var(--space-12));
+      color: var(--color-inverse);
+      background: var(--color-primary);
+      border-radius: var(--radius-xl);
+    }
+
+    .service-number {
+      font-family: var(--font-display);
+      font-size: var(--text-xl);
+      opacity: 0.65;
+    }
+
+    .service-feature h3 {
+      max-width: 500px;
+      margin-bottom: var(--space-4);
+      font-family: var(--font-display);
+      font-size: var(--text-xl);
+    }
+
+    .service-feature p {
+      max-width: 560px;
+      opacity: 0.86;
+    }
+
+    .service-list {
+      display: grid;
+      gap: var(--space-4);
+    }
+
+    .service-card {
+      padding: var(--space-6);
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg);
+    }
+
+    .service-card h3 {
+      margin-bottom: var(--space-3);
+    }
+
+    .service-card p {
+      color: var(--color-muted);
+      font-size: var(--text-sm);
+    }
+
+    .process-grid {
+      display: grid;
+      gap: var(--space-6);
+      counter-reset: process;
+    }
+
+    .process-step {
+      position: relative;
+      padding-top: var(--space-6);
+      border-top: 1px solid var(--color-border);
+      counter-increment: process;
+    }
+
+    .process-step::before {
+      display: block;
+      margin-bottom: var(--space-5);
+      color: var(--color-primary);
+      font-size: var(--text-sm);
+      font-weight: 700;
+      content: "0" counter(process);
+    }
+
+    .process-step h3 {
+      margin-bottom: var(--space-3);
+    }
+
+    .process-step p {
+      color: var(--color-muted);
+      font-size: var(--text-sm);
+    }
+
+    .local-grid {
+      display: grid;
+      gap: var(--space-4);
+    }
+
+    .local-card {
+      padding: var(--space-6);
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg);
+    }
+
+    .local-card h3 {
+      margin-bottom: var(--space-3);
+    }
+
+    .local-card p {
+      color: var(--color-muted);
+      font-size: var(--text-sm);
+    }
+
+    .local-card .status {
+      display: inline-flex;
+      margin-top: var(--space-5);
+      padding: var(--space-2) var(--space-3);
+      color: var(--color-primary);
+      background: var(--color-primary-soft);
+      border-radius: var(--radius-full);
+      font-size: var(--text-xs);
+      font-weight: 700;
+    }
+
+    .waitlist-wrap {
+      display: grid;
+      gap: var(--space-10);
+      align-items: start;
+    }
+
+    .waitlist-copy h2 {
+      margin-bottom: var(--space-5);
+      font-size: var(--text-xl);
+    }
+
+    .waitlist-copy > p {
+      margin-bottom: var(--space-6);
+      color: var(--color-muted);
+    }
+
+    .waitlist-points {
+      display: grid;
+      gap: var(--space-4);
+      list-style: none;
+    }
+
+    .waitlist-points li {
+      display: grid;
+      grid-template-columns: 1.7rem 1fr;
+      gap: var(--space-3);
+      color: var(--color-muted);
+      font-size: var(--text-sm);
+    }
+
+    .waitlist-points li::before {
+      display: inline-flex;
+      width: 1.7rem;
+      height: 1.7rem;
+      align-items: center;
+      justify-content: center;
+      color: var(--color-inverse);
+      background: var(--color-primary);
+      border-radius: 50%;
+      font-size: 0.75rem;
+      font-weight: 700;
+      content: "✓";
+    }
+
+    .form-card {
+      padding: clamp(var(--space-6), 5vw, var(--space-10));
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-xl);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .form-card h3 {
+      margin-bottom: var(--space-2);
+    }
+
+    .form-intro {
+      margin-bottom: var(--space-6);
+      color: var(--color-muted);
+      font-size: var(--text-sm);
+    }
+
+    .form-grid {
+      display: grid;
+      gap: var(--space-5);
+    }
+
+    .field {
+      display: grid;
+      gap: var(--space-2);
+    }
+
+    .field label,
+    .fieldset-label {
+      color: var(--color-text);
+      font-size: var(--text-sm);
+      font-weight: 700;
+    }
+
+    .field-hint {
+      color: var(--color-faint);
+      font-size: var(--text-xs);
+    }
+
+    input,
+    select,
+    textarea {
+      width: 100%;
+      min-height: 50px;
+      padding: var(--space-3) var(--space-4);
+      color: var(--color-text);
+      background: var(--color-bg);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-md);
+    }
+
+    textarea {
+      min-height: 120px;
+      resize: vertical;
+    }
+
+    input::placeholder,
+    textarea::placeholder {
+      color: var(--color-faint);
+    }
+
+    input:focus,
+    select:focus,
+    textarea:focus {
+      border-color: var(--color-primary);
+      box-shadow: 0 0 0 3px
+        color-mix(in srgb, var(--color-primary) 18%, transparent);
+      outline: 0;
+    }
+
+    .checkbox-grid {
+      display: grid;
+      gap: var(--space-3);
+      margin-top: var(--space-2);
+    }
+
+    .checkbox-option {
+      display: flex;
+      min-height: 48px;
+      align-items: center;
+      gap: var(--space-3);
+      padding: var(--space-3);
+      background: var(--color-bg);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-md);
+      cursor: pointer;
+    }
+
+    .checkbox-option input {
+      width: 20px;
+      min-height: auto;
+      height: 20px;
+      flex: 0 0 20px;
+      accent-color: var(--color-primary);
+    }
+
+    .consent {
+      display: flex;
+      align-items: flex-start;
+      gap: var(--space-3);
+      color: var(--color-muted);
+      font-size: var(--text-xs);
+      line-height: 1.55;
+    }
+
+    .consent input {
+      width: 20px;
+      min-height: auto;
+      height: 20px;
+      flex: 0 0 20px;
+      margin-top: 2px;
+      accent-color: var(--color-primary);
+    }
+
+    .form-button {
+      width: 100%;
+    }
+
+    .form-status {
+      display: none;
+      padding: var(--space-4);
+      border-radius: var(--radius-md);
+      font-size: var(--text-sm);
+    }
+
+    .form-status.visible {
+      display: block;
+    }
+
+    .form-status.warning {
+      color: var(--color-warning);
+      background: var(--color-warning-soft);
+    }
+
+    .faq-list {
+      border-top: 1px solid var(--color-border);
+    }
+
+    details {
+      border-bottom: 1px solid var(--color-border);
+    }
+
+    summary {
+      display: flex;
+      min-height: 72px;
+      align-items: center;
+      justify-content: space-between;
+      gap: var(--space-6);
+      padding-block: var(--space-4);
+      font-weight: 700;
+      cursor: pointer;
+      list-style: none;
+    }
+
+    summary::-webkit-details-marker {
+      display: none;
+    }
+
+    summary::after {
+      color: var(--color-primary);
+      font-size: var(--text-lg);
+      content: "+";
+    }
+
+    details[open] summary::after {
+      content: "−";
+    }
+
+    details p {
+      padding-bottom: var(--space-6);
+      color: var(--color-muted);
+      font-size: var(--text-sm);
+    }
+
+    .contact-strip {
+      padding: var(--space-10);
+      color: var(--color-inverse);
+      background: var(--color-primary);
+      border-radius: var(--radius-xl);
+    }
+
+    .contact-strip h2 {
+      margin-bottom: var(--space-3);
+      font-size: var(--text-xl);
+    }
+
+    .contact-strip p {
+      margin-bottom: var(--space-6);
+      opacity: 0.88;
+    }
+
+    .contact-strip .button {
+      color: var(--color-text);
+      background: var(--color-surface);
+    }
+
+    .site-footer {
+      padding-block: var(--space-12);
+      border-top: 1px solid var(--color-divider);
+    }
+
+    .footer-grid {
+      display: grid;
+      gap: var(--space-8);
+    }
+
+    .footer-copy {
+      color: var(--color-muted);
+      font-size: var(--text-sm);
+    }
+
+    .footer-contact {
+      display: grid;
+      gap: var(--space-2);
+      font-size: var(--text-sm);
+    }
+
+    .footer-contact a:hover {
+      color: var(--color-primary);
+    }
+
+    .legal-note {
+      margin-top: var(--space-8);
+      padding-top: var(--space-6);
+      color: var(--color-faint);
+      border-top: 1px solid var(--color-divider);
+      font-size: var(--text-xs);
+    }
+
+    @media (min-width: 760px) {
+      .hero-grid {
+        grid-template-columns: minmax(0, 1.25fr) minmax(320px, 0.75fr);
+      }
+
+      .services-layout {
+        grid-template-columns: 1.15fr 0.85fr;
+      }
+
+      .process-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      .local-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      .waitlist-wrap {
+        grid-template-columns: 0.85fr 1.15fr;
+      }
+
+      .form-grid.two-column {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .field.full-width {
+        grid-column: 1 / -1;
+      }
+
+      .checkbox-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .footer-grid {
+        grid-template-columns: 1.3fr 0.7fr;
+      }
+    }
+
+    @media (max-width: 920px) {
+      .desktop-only,
+      .nav-links {
+        display: none;
+      }
+
+      .menu-button {
+        display: inline-flex;
+      }
+
+      .nav-links.mobile-visible {
+        position: fixed;
+        top: 105px;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: var(--space-2);
+        padding: var(--space-6);
+        background: var(--color-bg);
+      }
+
+      .nav-links.mobile-visible a {
+        display: flex;
+        min-height: 52px;
+        align-items: center;
+        padding-inline: var(--space-4);
+        background: var(--color-surface);
+        border: 1px solid var(--color-border);
+        border-radius: var(--radius-md);
+      }
+    }
+
+    @media (max-width: 520px) {
+      .brand-location {
+        display: none;
+      }
+
+      .hero-actions {
+        display: grid;
+      }
+
+      .hero-actions .button {
+        width: 100%;
+      }
+
+      .hero-panel,
+      .form-card,
+      .contact-strip {
+        padding: var(--space-6);
+      }
+
+      .profile-row {
+        grid-template-columns: 5.5rem 1fr;
+      }
+
+      .trust-list {
+        display: grid;
+        gap: var(--space-3);
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *,
+      *::before,
+      *::after {
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <div class="announcement">
+    Founding customer priority list now open for Denver-area homeowners
+  </div>
+
+  <header class="site-header">
+    <nav class="nav container" aria-label="Primary navigation">
+      <a class="brand" href="#top" aria-label="Front Range Water Pros home">
+        <svg
+          class="brand-mark"
+          viewBox="0 0 48 48"
+          fill="none"
+          role="img"
+          aria-label="Front Range Water Pros logo"
+        >
+          <path
+            d="M4 31L15 17L22 25L29 12L44 31"
+            stroke="currentColor"
+            stroke-width="3"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M7 37C12 33 17 33 22 37C27 41 32 41 41 35"
+            stroke="currentColor"
+            stroke-width="3"
+            stroke-linecap="round"
+          />
+        </svg>
+
+        <span>
+          <span class="brand-name">Front Range Water Pros</span>
+          <span class="brand-location">Denver Metro, Colorado</span>
+        </span>
+      </a>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#solutions">Solutions</a></li>
+        <li><a href="#process">Our process</a></li>
+        <li><a href="#service-area">Service area</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li>
+          <a class="button button-primary" href="#waitlist">
+            Join the priority list
+          </a>
+        </li>
+      </ul>
+
+      <div class="nav-actions">
+        <button
+          class="icon-button"
+          type="button"
+          data-theme-toggle
+          aria-label="Switch color theme"
+          title="Switch color theme"
+        >
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            aria-hidden="true"
+          >
+            <path d="M21 12.8A9 9 0 1 1 11.2 3A7 7 0 0 0 21 12.8Z"/>
+          </svg>
+        </button>
+
+        <a
+          class="button button-primary desktop-only"
+          href="#waitlist"
+        >
+          Join the list
+        </a>
+
+        <button
+          class="menu-button"
+          type="button"
+          aria-label="Open navigation menu"
+          aria-controls="nav-links"
+          aria-expanded="false"
+          data-menu-button
+        >
+          <svg
+            width="22"
+            height="22"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            aria-hidden="true"
+          >
+            <path d="M4 7H20M4 12H20M4 17H20"/>
+          </svg>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow">Colorado-specific water treatment</div>
+
+          <h1>
+            Your water system should be designed for
+            <span>your home.</span>
+          </h1>
+
+          <p class="hero-lead">
+            Front Range Water Pros is building a better way for Denver-area
+            homeowners to evaluate filtration, softening and drinking-water
+            options—starting with the property, water provider and actual
+            household needs.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button button-primary" href="#waitlist">
+              Join the founding customer list
+            </a>
+
+            <a class="button button-secondary" href="#process">
+              See how it works
+            </a>
+          </div>
+
+          <ul class="trust-list">
+            <li>Location-aware recommendations</li>
+            <li>No one-size-fits-all packages</li>
+            <li>Installation verification required</li>
+          </ul>
+        </div>
+
+        <aside class="hero-panel" aria-label="Water profile example">
+          <div class="hero-panel-label">A better recommendation starts here</div>
+
+          <div class="water-profile">
+            <div class="profile-row">
+              <strong>Location</strong>
+              <div class="profile-track">
+                <span class="profile-value" style="width: 82%"></span>
+              </div>
+            </div>
+
+            <div class="profile-row">
+              <strong>Water source</strong>
+              <div class="profile-track">
+                <span class="profile-value" style="width: 69%"></span>
+              </div>
+            </div>
+
+            <div class="profile-row">
+              <strong>Household use</strong>
+              <div class="profile-track">
+                <span class="profile-value" style="width: 91%"></span>
+              </div>
+            </div>
+
+            <div class="profile-row">
+              <strong>Test results</strong>
+              <div class="profile-track">
+                <span class="profile-value" style="width: 60%"></span>
+              </div>
+            </div>
+          </div>
+
+          <p class="hero-panel-note">
+            Utility averages help with initial planning, but final equipment
+            selection should use property-specific testing and installation
+            verification.
+          </p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section section-surface" id="solutions">
+      <div class="container">
+        <header class="section-heading">
+          <div class="eyebrow">Potential solutions</div>
+
+          <h2>Choose treatment based on the problem—not the sales package.</h2>
+
+          <p>
+            The right combination depends on the water source, verified
+            conditions, household demand and what the homeowner actually
+            wants to improve.
+          </p>
+        </header>
+
+        <div class="services-layout">
+          <article class="service-feature">
+            <span class="service-number">01</span>
+
+            <div>
+              <h3>Whole-home filtration</h3>
+
+              <p>
+                Designed to address taste, odor, disinfectant and sediment
+                concerns throughout the home while preserving usable flow
+                and pressure.
+              </p>
+            </div>
+          </article>
+
+          <div class="service-list">
+            <article class="service-card">
+              <h3>Water softening</h3>
+              <p>
+                For homes with verified hardness and scale concerns. System
+                capacity and regeneration settings depend on measured
+                hardness and household water use.
+              </p>
+            </article>
+
+            <article class="service-card">
+              <h3>Under-sink drinking water</h3>
+              <p>
+                Point-of-use filtration and reverse-osmosis options for
+                cooking and drinking water, selected around the contaminants
+                or characteristics being addressed.
+              </p>
+            </article>
+
+            <article class="service-card">
+              <h3>Private-well treatment</h3>
+              <p>
+                Well-water treatment requires current laboratory data. Final
+                recommendations may involve sediment, hardness, iron,
+                manganese, disinfection or other targeted treatment.
+              </p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="process">
+      <div class="container">
+        <header class="section-heading">
+          <div class="eyebrow">Our planned process</div>
+
+          <h2>Test first. Match the equipment. Verify the installation.</h2>
+
+          <p>
+            This approach is intended to reduce oversizing, undersizing and
+            unnecessary equipment.
+          </p>
+        </header>
+
+        <div class="process-grid">
+          <article class="process-step">
+            <h3>Understand the home</h3>
+            <p>
+              Identify the service address, utility or well, household size,
+              bathrooms, high-flow fixtures and the homeowner’s primary
+              concerns.
+            </p>
+          </article>
+
+          <article class="process-step">
+            <h3>Verify the water</h3>
+            <p>
+              Review utility information and conduct appropriate onsite or
+              laboratory testing before making contaminant-specific
+              recommendations.
+            </p>
+          </article>
+
+          <article class="process-step">
+            <h3>Confirm the system</h3>
+            <p>
+              A qualified installation professional verifies plumbing,
+              pressure, flow, drainage, electrical access and available
+              equipment space before ordering.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-surface" id="service-area">
+      <div class="container">
+        <header class="section-heading">
+          <div class="eyebrow">Front Range service area</div>
+
+          <h2>Water conditions can change across the metro area.</h2>
+
+          <p>
+            A city name alone does not always identify the actual water
+            provider. Recommendations begin with the property address and
+            utility serving the home.
+          </p>
+        </header>
+
+        <div class="local-grid">
+          <article class="local-card">
+            <h3>Denver</h3>
+            <p>
+              Recommendations account for the customer’s actual water
+              provider, seasonal variation, home plumbing and measured
+              conditions at the property.
+            </p>
+            <span class="status">Priority-list area</span>
+          </article>
+
+          <article class="local-card">
+            <h3>Aurora</h3>
+            <p>
+              Household needs and water characteristics are reviewed before
+              recommending softening, whole-home filtration or drinking-water
+              treatment.
+            </p>
+            <span class="status">Priority-list area</span>
+          </article>
+
+          <article class="local-card">
+            <h3>Westminster</h3>
+            <p>
+              Final system sizing depends on property-specific hardness,
+              household use, peak flow and available installation
+              infrastructure.
+            </p>
+            <span class="status">Priority-list area</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="waitlist">
+      <div class="container waitlist-wrap">
+        <div class="waitlist-copy">
+          <div class="eyebrow">Founding customer list</div>
+
+          <h2>Help shape a better local water-treatment service.</h2>
+
+          <p>
+            Front Range Water Pros is currently measuring homeowner demand
+            and preparing its equipment, testing and licensed-installation
+            network. Joining the list does not commit you to purchase.
+          </p>
+
+          <ul class="waitlist-points">
+            <li>
+              <span>
+                Tell us what you want to improve about your water.
+              </span>
+            </li>
+
+            <li>
+              <span>
+                Receive an invitation when consultations become available in
+                your area.
+              </span>
+            </li>
+
+            <li>
+              <span>
+                No deposit, equipment order or installation contract is
+                created by joining.
+              </span>
+            </li>
+          </ul>
+        </div>
+
+        <form
+          class="form-card"
+          id="waitlist-form"
+          method="POST"
+          data-waitlist-form
+        >
+          <h3>Join the priority list</h3>
+
+          <p class="form-intro">
+            Fields marked with an asterisk are required.
+          </p>
+
+          <input
+            type="hidden"
+            name="_subject"
+            value="New Front Range Water Pros waitlist inquiry"
+          >
+
+          <input
+            type="hidden"
+            name="source"
+            value="Front Range Water Pros website"
+          >
+
+          <div class="form-grid two-column">
+            <div class="field">
+              <label for="first-name">First name *</label>
+              <input
+                id="first-name"
+                name="first_name"
+                type="text"
+                autocomplete="given-name"
+                required
+              >
+            </div>
+
+            <div class="field">
+              <label for="last-name">Last name *</label>
+              <input
+                id="last-name"
+                name="last_name"
+                type="text"
+                autocomplete="family-name"
+                required
+              >
+            </div>
+
+            <div class="field">
+              <label for="email">Email *</label>
+              <input
+                id="email"
+                name="email"
+                type="email"
+                autocomplete="email"
+                required
+              >
+            </div>
+
+            <div class="field">
+              <label for="phone">Phone</label>
+              <input
+                id="phone"
+                name="phone"
+                type="tel"
+                autocomplete="tel"
+              >
+            </div>
+
+            <div class="field full-width">
+              <label for="address">Service address or ZIP code *</label>
+              <input
+                id="address"
+                name="service_address"
+                type="text"
+                autocomplete="street-address"
+                placeholder="Street address, city or ZIP code"
+                required
+              >
+              <span class="field-hint">
+                Used to help identify the likely water provider and service
+                area.
+              </span>
+            </div>
+
+            <div class="field">
+              <label for="water-source">Water source *</label>
+              <select id="water-source" name="water_source" required>
+                <option value="">Select one</option>
+                <option>Municipal or city water</option>
+                <option>Private well</option>
+                <option>Community or shared well</option>
+                <option>Not sure</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="occupants">Full-time occupants</label>
+              <select id="occupants" name="occupants">
+                <option value="">Select one</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6 or more</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="bathrooms">Full bathrooms</label>
+              <select id="bathrooms" name="bathrooms">
+                <option value="">Select one</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5 or more</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="timeline">Preferred timeline</label>
+              <select id="timeline" name="timeline">
+                <option value="">Select one</option>
+                <option>As soon as available</option>
+                <option>Within 1–3 months</option>
+                <option>Within 3–6 months</option>
+                <option>Researching for later</option>
+              </select>
+            </div>
+
+            <fieldset class="field full-width">
+              <legend class="fieldset-label">
+                What would you most like to improve?
+              </legend>
+
+              <div class="checkbox-grid">
+                <label class="checkbox-option">
+                  <input
+                    type="checkbox"
+                    name="concerns"
+                    value="Taste or odor"
+                  >
+                  <span>Taste or odor</span>
+                </label>
+
+                <label class="checkbox-option">
+                  <input
+                    type="checkbox"
+                    name="concerns"
+                    value="Scale or water spots"
+                  >
+                  <span>Scale or water spots</span>
+                </label>
+
+                <label class="checkbox-option">
+                  <input
+                    type="checkbox"
+                    name="concerns"
+                    value="Drinking water"
+                  >
+                  <span>Drinking water</span>
+                </label>
+
+                <label class="checkbox-option">
+                  <input
+                    type="checkbox"
+                    name="concerns"
+                    value="Sediment or staining"
+                  >
+                  <span>Sediment or staining</span>
+                </label>
+
+                <label class="checkbox-option">
+                  <input
+                    type="checkbox"
+                    name="concerns"
+                    value="Appliance protection"
+                  >
+                  <span>Appliance protection</span>
+                </label>
+
+                <label class="checkbox-option">
+                  <input
+                    type="checkbox"
+                    name="concerns"
+                    value="Existing system replacement"
+                  >
+                  <span>Existing system replacement</span>
+                </label>
+              </div>
+            </fieldset>
+
+            <div class="field full-width">
+              <label for="message">
+                Tell us what you notice about your water
+              </label>
+
+              <textarea
+                id="message"
+                name="message"
+                placeholder="For example: white spots on shower glass, chlorine taste, sediment, an existing system that no longer works..."
+              ></textarea>
+            </div>
+
+            <div class="field full-width">
+              <label class="consent">
+                <input
+                  type="checkbox"
+                  name="contact_consent"
+                  value="Agreed"
+                  required
+                >
+
+                <span>
+                  I agree that Front Range Water Pros may contact me by
+                  telephone, email or text regarding this request. Consent is
+                  not a condition of purchase. Message and data rates may
+                  apply. Reply STOP to opt out of text messages. *
+                </span>
+              </label>
+            </div>
+
+            <div
+              class="form-status warning full-width"
+              id="form-status"
+              role="status"
+              aria-live="polite"
+            ></div>
+
+            <div class="field full-width">
+              <button
+                class="button button-primary form-button"
+                type="submit"
+              >
+                Join the priority list
+              </button>
+
+              <span class="field-hint">
+                This is a request for future contact—not a quote, order or
+                installation agreement.
+              </span>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section class="section section-surface" id="faq">
+      <div class="narrow">
+        <header class="section-heading">
+          <div class="eyebrow">Common questions</div>
+          <h2>Before you join</h2>
+        </header>
+
+        <div class="faq-list">
+          <details>
+            <summary>Are you currently scheduling installations?</summary>
+            <p>
+              Not yet. Front Range Water Pros is currently collecting
+              homeowner interest while building its supplier, testing,
+              insurance and licensed-installation relationships. Joining the
+              list reserves no appointment and creates no purchase
+              obligation.
+            </p>
+          </details>
+
+          <details>
+            <summary>Will the questionnaire tell me exactly what to buy?</summary>
+            <p>
+              No. The questionnaire supports initial qualification. Final
+              equipment selection should follow water testing and verification
+              of plumbing size, pressure, flow, drainage, electrical access
+              and available installation space.
+            </p>
+          </details>
+
+          <details>
+            <summary>Do all Denver-area homes need a water softener?</summary>
+            <p>
+              No. Water characteristics vary by utility, source, neighborhood
+              and season. Softening should be considered using measured
+              hardness, the homeowner’s concerns and the expected benefit.
+            </p>
+          </details>
+
+          <details>
+            <summary>Who will perform plumbing installation?</summary>
+            <p>
+              Any plumbing installation offered through the future service
+              will be assigned to an appropriately licensed installation
+              professional. Final responsibilities and warranties will be
+              identified in the applicable written agreement.
+            </p>
+          </details>
+
+          <details>
+            <summary>Will joining the list affect my credit?</summary>
+            <p>
+              No. The waitlist does not involve financing, a credit check,
+              payment information, a deposit or a contract.
+            </p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="contact-strip">
+          <h2>Have a question before joining?</h2>
+
+          <p>
+            Contact Front Range Water Pros or request a future consultation.
+          </p>
+
+          <a
+            class="button"
+            href="#waitlist"
+            data-calendar-link
+          >
+            Request future consultation
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a class="brand" href="#top">
+            <svg
+              class="brand-mark"
+              viewBox="0 0 48 48"
+              fill="none"
+              aria-hidden="true"
+            >
+              <path
+                d="M4 31L15 17L22 25L29 12L44 31"
+                stroke="currentColor"
+                stroke-width="3"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M7 37C12 33 17 33 22 37C27 41 32 41 41 35"
+                stroke="currentColor"
+                stroke-width="3"
+                stroke-linecap="round"
+              />
+            </svg>
+
+            <span>
+              <span class="brand-name">Front Range Water Pros</span>
+              <span class="brand-location">
+                Water treatment designed for Colorado homes
+              </span>
+            </span>
+          </a>
+
+          <p class="footer-copy">
+            Serving prospective customers across Denver and surrounding Front
+            Range communities.
+          </p>
+        </div>
+
+        <div class="footer-contact">
+          <strong>Contact</strong>
+          <a href="#" data-phone-link data-phone-text>PHONE PLACEHOLDER</a>
+          <a href="#" data-email-link data-email-text>EMAIL PLACEHOLDER</a>
+          <a href="#waitlist" data-calendar-link>CALENDAR PLACEHOLDER</a>
+        </div>
+      </div>
+
+      <p class="legal-note">
+        Front Range Water Pros is currently collecting market-interest
+        inquiries. This website does not constitute a binding offer, equipment
+        quote, water-quality guarantee, financing offer or installation
+        agreement. Preliminary recommendations must be verified through
+        appropriate testing and installation review. Product capabilities
+        depend on the exact model and applicable third-party certification.
+      </p>
+
+      <p class="legal-note">
+        © <span id="current-year"></span> Front Range Water Pros.
+        All rights reserved.
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    /*
+      ===============================================================
+      EDIT THESE SETTINGS
+      ===============================================================
+
+      Form setup:
+      1. Create a free form at https://formspree.io/
+      2. Copy the endpoint Formspree provides.
+      3. Replace YOUR_FORM_ID below.
+
+      Example:
+      formEndpoint: "https://formspree.io/f/abcxyzde"
+
+      Replace the phone, email and calendar placeholders when ready.
+    */
+
+    const SITE_CONFIG = {
+      phoneDisplay: "PHONE PLACEHOLDER",
+      phoneHref: "tel:+1XXXXXXXXXX",
+
+      emailDisplay: "EMAIL PLACEHOLDER",
+      emailHref: "mailto:YOUR_EMAIL@example.com",
+
+      calendarDisplay: "CALENDAR PLACEHOLDER",
+      calendarUrl: "#waitlist",
+
+      formEndpoint: "https://formspree.io/f/YOUR_FORM_ID"
+    };
+
+    const root = document.documentElement;
+    const themeButton = document.querySelector("[data-theme-toggle]");
+    const menuButton = document.querySelector("[data-menu-button]");
+    const navLinks = document.getElementById("nav-links");
+    const form = document.querySelector("[data-waitlist-form]");
+    const formStatus = document.getElementById("form-status");
+
+    let currentTheme = window.matchMedia("(prefers-color-scheme: dark)").matches
+      ? "dark"
+      : "light";
+
+    function applyTheme(theme) {
+      currentTheme = theme;
+      root.setAttribute("data-theme", theme);
+
+      themeButton.setAttribute(
+        "aria-label",
+        theme === "dark"
+          ? "Switch to light theme"
+          : "Switch to dark theme"
+      );
+
+      themeButton.innerHTML = theme === "dark"
+        ? `
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            aria-hidden="true"
+          >
+            <circle cx="12" cy="12" r="4"/>
+            <path d="M12 2V4M12 20V22M4.93 4.93L6.34 6.34M17.66 17.66L19.07 19.07M2 12H4M20 12H22M4.93 19.07L6.34 17.66M17.66 6.34L19.07 4.93"/>
+          </svg>
+        `
+        : `
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            aria-hidden="true"
+          >
+            <path d="M21 12.8A9 9 0 1 1 11.2 3A7 7 0 0 0 21 12.8Z"/>
+          </svg>
+        `;
+    }
+
+    applyTheme(currentTheme);
+
+    themeButton.addEventListener("click", function () {
+      applyTheme(currentTheme === "dark" ? "light" : "dark");
+    });
+
+    menuButton.addEventListener("click", function () {
+      const isOpen = navLinks.classList.toggle("mobile-visible");
+
+      document.body.classList.toggle("menu-open", isOpen);
+      menuButton.setAttribute("aria-expanded", String(isOpen));
+      menuButton.setAttribute(
+        "aria-label",
+        isOpen ? "Close navigation menu" : "Open navigation menu"
+      );
+    });
+
+    navLinks.querySelectorAll("a").forEach(function (link) {
+      link.addEventListener("click", function () {
+        navLinks.classList.remove("mobile-visible");
+        document.body.classList.remove("menu-open");
+        menuButton.setAttribute("aria-expanded", "false");
+        menuButton.setAttribute("aria-label", "Open navigation menu");
+      });
+    });
+
+    document.querySelectorAll("[data-phone-text]").forEach(function (element) {
+      element.textContent = SITE_CONFIG.phoneDisplay;
+    });
+
+    document.querySelectorAll("[data-phone-link]").forEach(function (element) {
+      element.href = SITE_CONFIG.phoneHref;
+    });
+
+    document.querySelectorAll("[data-email-text]").forEach(function (element) {
+      element.textContent = SITE_CONFIG.emailDisplay;
+    });
+
+    document.querySelectorAll("[data-email-link]").forEach(function (element) {
+      element.href = SITE_CONFIG.emailHref;
+    });
+
+    document.querySelectorAll("[data-calendar-link]").forEach(function (element) {
+      element.href = SITE_CONFIG.calendarUrl;
+
+      if (element.textContent.trim() === "CALENDAR PLACEHOLDER") {
+        element.textContent = SITE_CONFIG.calendarDisplay;
+      }
+
+      if (
+        SITE_CONFIG.calendarUrl.startsWith("http://") ||
+        SITE_CONFIG.calendarUrl.startsWith("https://")
+      ) {
+        element.target = "_blank";
+        element.rel = "noopener noreferrer";
+      }
+    });
+
+    form.action = SITE_CONFIG.formEndpoint;
+
+    form.addEventListener("submit", function (event) {
+      if (SITE_CONFIG.formEndpoint.includes("YOUR_FORM_ID")) {
+        event.preventDefault();
+
+        formStatus.textContent =
+          "The form is ready, but the Formspree endpoint still needs to be configured. Replace YOUR_FORM_ID in SITE_CONFIG before publishing.";
+
+        formStatus.classList.add("visible");
+
+        formStatus.scrollIntoView({
+          behavior: "smooth",
+          block: "center"
+        });
+      }
+    });
+
+    document.getElementById("current-year").textContent =
+      new Date().getFullYear();
+  </script>
+</body>
+</html>
