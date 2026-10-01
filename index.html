@@ -1,81 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>Front Range Water Pros | Denver Water Filtration</title>
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Front Range Water Pros | Water Filtration for Colorado Homes</title>
   <meta
     name="description"
-    content="Water filtration and softening solutions designed around your home, water provider and household needs."
-  >
-
-  <meta property="og:title" content="Front Range Water Pros">
-  <meta
-    property="og:description"
-    content="Water treatment designed for Colorado homes."
-  >
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://frontrangewaterpros.com">
-  <meta name="theme-color" content="#075e62">
-
-  <link rel="canonical" href="https://frontrangewaterpros.com">
-
+    content="Front Range Water Pros helps Colorado homeowners evaluate whole-home filtration, softening, and drinking-water systems using utility data, household demand, and real water concerns."
+  />
+  <meta name="theme-color" content="#0b666b" />
+  <link rel="preconnect" href="https://api.fontshare.com" />
   <link
-    href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,600,700&f[]=cabinet-grotesk@500,600,700&display=swap"
+    href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&f[]=cabinet-grotesk@500,700&display=swap"
     rel="stylesheet"
-  >
-
+  />
   <style>
-    /*
-      Front Range Water Pros
-      Art direction: Colorado utility expertise → trustworthy, clean, restrained
-      Palette: warm neutral surfaces with deep water-teal accent
-      Typography: Cabinet Grotesk + Satoshi
-      Density: balanced
-    */
-
     :root,
     [data-theme="light"] {
-      --bg: #f5f4ef;
-      --surface: #fbfaf6;
-      --surface-2: #ffffff;
-      --surface-offset: #eceae3;
-      --surface-accent: #dcebea;
-      --border: #d7d4cc;
-      --divider: #dfdcd5;
+      --bg: #f7f6f2;
+      --surface: #fcfbf8;
+      --surface-2: #f1efea;
+      --border: #d8d4cb;
+      --text: #23231f;
+      --muted: #64645d;
+      --faint: #8b8b84;
+      --primary: #0b666b;
+      --primary-2: #0f7f86;
+      --primary-soft: #d9eceb;
+      --success: #2e6f44;
+      --warning: #9a5a14;
+      --danger: #9e2e58;
+      --white: #ffffff;
+      --shadow-sm: 0 1px 2px rgba(20, 18, 13, 0.06);
+      --shadow-md: 0 10px 28px rgba(20, 18, 13, 0.08);
+      --shadow-lg: 0 24px 60px rgba(20, 18, 13, 0.12);
 
-      --text: #242822;
-      --text-muted: #5f665f;
-      --text-faint: #7b817a;
-      --text-inverse: #ffffff;
-
-      --primary: #075e62;
-      --primary-hover: #064c50;
-      --primary-active: #043c3f;
-      --primary-light: #dcebea;
-
-      --success: #346822;
-      --success-light: #e0ebda;
-      --warning: #8b4b16;
-      --warning-light: #f0e3d6;
-      --error: #9a3157;
-      --error-light: #f1dce4;
-
-      --shadow-sm: 0 1px 3px rgba(35, 42, 38, 0.08);
-      --shadow-md: 0 10px 28px rgba(35, 42, 38, 0.10);
-      --shadow-lg: 0 24px 60px rgba(35, 42, 38, 0.14);
-
-      --font-display: "Cabinet Grotesk", "Helvetica Neue", sans-serif;
-      --font-body: "Satoshi", "Helvetica Neue", sans-serif;
-
-      --text-xs: clamp(0.75rem, 0.72rem + 0.15vw, 0.875rem);
-      --text-sm: clamp(0.875rem, 0.83rem + 0.2vw, 1rem);
+      --text-xs: clamp(0.75rem, 0.72rem + 0.2vw, 0.875rem);
+      --text-sm: clamp(0.875rem, 0.84rem + 0.25vw, 1rem);
       --text-base: clamp(1rem, 0.96rem + 0.2vw, 1.125rem);
-      --text-lg: clamp(1.125rem, 1.02rem + 0.5vw, 1.4rem);
-      --text-xl: clamp(1.55rem, 1.25rem + 1.1vw, 2.25rem);
-      --text-2xl: clamp(2.25rem, 1.65rem + 2.4vw, 4.25rem);
+      --text-lg: clamp(1.125rem, 1.02rem + 0.55vw, 1.45rem);
+      --text-xl: clamp(1.5rem, 1.2rem + 1.2vw, 2.3rem);
+      --text-2xl: clamp(2.2rem, 1.5rem + 3vw, 4.5rem);
 
       --space-1: 0.25rem;
       --space-2: 0.5rem;
@@ -90,44 +55,35 @@
       --space-20: 5rem;
       --space-24: 6rem;
 
-      --radius-sm: 0.375rem;
-      --radius-md: 0.625rem;
-      --radius-lg: 0.875rem;
-      --radius-xl: 1.25rem;
+      --radius-sm: 0.4rem;
+      --radius-md: 0.7rem;
+      --radius-lg: 1rem;
+      --radius-xl: 1.4rem;
       --radius-full: 999px;
 
       --content: 1180px;
+      --font-display: "Cabinet Grotesk", "Helvetica Neue", sans-serif;
+      --font-body: "Satoshi", "Helvetica Neue", sans-serif;
       --transition: 180ms cubic-bezier(0.16, 1, 0.3, 1);
     }
 
     [data-theme="dark"] {
-      --bg: #151918;
-      --surface: #1b201e;
-      --surface-2: #222826;
-      --surface-offset: #292f2c;
-      --surface-accent: #263b3a;
-      --border: #3d4541;
-      --divider: #303734;
-
-      --text: #eef0ec;
-      --text-muted: #b8beb8;
-      --text-faint: #989f99;
-      --text-inverse: #10201f;
-
-      --primary: #72bfc0;
-      --primary-hover: #8ccfd0;
-      --primary-active: #a3dada;
-      --primary-light: #263b3a;
-
-      --success: #8cc56c;
-      --success-light: #293b24;
-      --warning: #e5a56a;
-      --warning-light: #493524;
-      --error: #e18bad;
-      --error-light: #482d38;
-
-      --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.25);
-      --shadow-md: 0 10px 28px rgba(0, 0, 0, 0.32);
+      --bg: #141615;
+      --surface: #1c1f1d;
+      --surface-2: #252927;
+      --border: #363b38;
+      --text: #efefe9;
+      --muted: #c0c0b7;
+      --faint: #96968f;
+      --primary: #62b6ba;
+      --primary-2: #8fd1d4;
+      --primary-soft: #1f3435;
+      --success: #7cc18f;
+      --warning: #f0b16a;
+      --danger: #eb8aac;
+      --white: #ffffff;
+      --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.24);
+      --shadow-md: 0 10px 28px rgba(0, 0, 0, 0.3);
       --shadow-lg: 0 24px 60px rgba(0, 0, 0, 0.4);
     }
 
@@ -147,30 +103,34 @@
 
     body {
       min-height: 100vh;
-      color: var(--text);
       background: var(--bg);
+      color: var(--text);
       font-family: var(--font-body);
       font-size: var(--text-base);
       line-height: 1.6;
       -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
     }
 
-    body.menu-open {
-      overflow: hidden;
+    img,
+    svg {
+      display: block;
+      max-width: 100%;
+      height: auto;
     }
 
-    h1,
-    h2,
-    h3 {
-      font-family: var(--font-display);
-      line-height: 1.08;
-      text-wrap: balance;
+    input,
+    button,
+    textarea,
+    select {
+      font: inherit;
+      color: inherit;
     }
 
-    p,
-    li {
-      max-width: 72ch;
-      text-wrap: pretty;
+    button {
+      cursor: pointer;
+      border: none;
+      background: none;
     }
 
     a {
@@ -178,56 +138,34 @@
       text-decoration: none;
     }
 
-    button,
-    input,
-    select,
-    textarea {
-      color: inherit;
-      font: inherit;
+    h1,
+    h2,
+    h3,
+    h4 {
+      font-family: var(--font-display);
+      line-height: 1.08;
+      text-wrap: balance;
     }
 
-    button {
-      cursor: pointer;
-    }
-
-    img,
-    svg {
-      display: block;
-      max-width: 100%;
+    p,
+    li {
+      text-wrap: pretty;
+      max-width: 72ch;
     }
 
     :focus-visible {
       outline: 3px solid var(--primary);
       outline-offset: 3px;
-    }
-
-    .skip-link {
-      position: fixed;
-      top: var(--space-3);
-      left: var(--space-3);
-      z-index: 1000;
-      transform: translateY(-150%);
-      padding: var(--space-3) var(--space-4);
-      color: var(--text-inverse);
-      background: var(--primary);
-      border-radius: var(--radius-md);
-    }
-
-    .skip-link:focus {
-      transform: translateY(0);
+      border-radius: var(--radius-sm);
     }
 
     .container {
-      width: min(calc(100% - 2rem), var(--content));
+      width: min(calc(100% - 1.5rem), var(--content));
       margin-inline: auto;
     }
 
     .section {
       padding-block: clamp(var(--space-16), 8vw, var(--space-24));
-    }
-
-    .section-compact {
-      padding-block: clamp(var(--space-10), 5vw, var(--space-16));
     }
 
     .eyebrow {
@@ -238,97 +176,91 @@
       color: var(--primary);
       font-size: var(--text-xs);
       font-weight: 700;
-      letter-spacing: 0.09em;
+      letter-spacing: 0.08em;
       text-transform: uppercase;
     }
 
     .eyebrow::before {
+      content: "";
       width: 24px;
       height: 2px;
-      content: "";
       background: currentColor;
     }
 
-    .section-heading {
-      max-width: 760px;
-      margin-bottom: var(--space-5);
+    .section-title {
       font-size: var(--text-xl);
+      margin-bottom: var(--space-4);
+      max-width: 16ch;
     }
 
     .section-copy {
-      max-width: 700px;
-      color: var(--text-muted);
+      color: var(--muted);
+      max-width: 68ch;
     }
 
-    .button {
+    .btn {
       display: inline-flex;
-      min-height: 48px;
       align-items: center;
       justify-content: center;
       gap: var(--space-2);
+      min-height: 48px;
       padding: var(--space-3) var(--space-5);
-      border: 1px solid transparent;
       border-radius: var(--radius-md);
+      border: 1px solid transparent;
       font-size: var(--text-sm);
       font-weight: 700;
       transition:
         background var(--transition),
         color var(--transition),
         border-color var(--transition),
-        transform var(--transition);
+        transform var(--transition),
+        box-shadow var(--transition);
     }
 
-    .button:hover {
+    .btn:hover {
       transform: translateY(-1px);
     }
 
-    .button:active {
+    .btn:active {
       transform: translateY(0);
     }
 
-    .button-primary {
-      color: var(--text-inverse);
+    .btn-primary {
       background: var(--primary);
+      color: var(--white);
+      box-shadow: var(--shadow-sm);
     }
 
-    .button-primary:hover {
-      background: var(--primary-hover);
+    .btn-primary:hover {
+      background: var(--primary-2);
     }
 
-    .button-secondary {
-      color: var(--text);
-      background: var(--surface-2);
+    .btn-secondary {
+      background: var(--surface);
       border-color: var(--border);
+      color: var(--text);
     }
 
-    .button-secondary:hover {
+    .btn-secondary:hover {
       border-color: var(--primary);
-    }
-
-    .button-ghost {
       color: var(--primary);
-      background: transparent;
-    }
-
-    .button-wide {
-      width: 100%;
     }
 
     .site-header {
       position: sticky;
       top: 0;
       z-index: 100;
+      backdrop-filter: blur(12px);
       background: color-mix(in srgb, var(--bg) 88%, transparent);
-      border-bottom: 1px solid var(--divider);
-      backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--border);
     }
 
     .nav {
-      display: flex;
       min-height: 76px;
+      display: flex;
       align-items: center;
       justify-content: space-between;
-      gap: var(--space-5);
+      gap: var(--space-4);
     }
 
     .brand {
@@ -336,9 +268,9 @@
       align-items: center;
       gap: var(--space-3);
       font-family: var(--font-display);
-      font-size: 1.08rem;
       font-weight: 700;
-      line-height: 1.1;
+      font-size: 1.04rem;
+      line-height: 1.05;
     }
 
     .brand-mark {
@@ -347,14 +279,14 @@
       flex: 0 0 auto;
     }
 
-    .brand-subtitle {
+    .brand-sub {
       display: block;
-      margin-top: 2px;
-      color: var(--text-muted);
+      margin-top: 3px;
+      color: var(--muted);
       font-family: var(--font-body);
       font-size: 0.72rem;
-      font-weight: 600;
-      letter-spacing: 0.05em;
+      font-weight: 700;
+      letter-spacing: 0.06em;
       text-transform: uppercase;
     }
 
@@ -365,13 +297,13 @@
       list-style: none;
     }
 
-    .nav-links a:not(.button) {
-      color: var(--text-muted);
+    .nav-links a {
+      color: var(--muted);
       font-size: var(--text-sm);
       font-weight: 600;
     }
 
-    .nav-links a:not(.button):hover {
+    .nav-links a:hover {
       color: var(--primary);
     }
 
@@ -381,38 +313,37 @@
       gap: var(--space-2);
     }
 
-    .icon-button {
-      display: grid;
+    .icon-btn {
       width: 44px;
       height: 44px;
+      display: grid;
       place-items: center;
-      color: var(--text);
-      background: var(--surface);
-      border: 1px solid var(--border);
       border-radius: var(--radius-md);
+      border: 1px solid var(--border);
+      background: var(--surface);
     }
 
-    .menu-button {
+    .menu-btn {
       display: none;
     }
 
     .hero {
+      padding-block: clamp(var(--space-16), 8vw, 7rem);
       overflow: hidden;
-      padding-block: clamp(var(--space-16), 9vw, 7.5rem);
     }
 
     .hero-grid {
       display: grid;
-      align-items: center;
-      gap: clamp(var(--space-10), 7vw, var(--space-24));
       grid-template-columns: minmax(0, 1.1fr) minmax(320px, 0.9fr);
+      gap: clamp(var(--space-10), 7vw, var(--space-24));
+      align-items: center;
     }
 
     .hero h1 {
-      max-width: 780px;
-      margin-bottom: var(--space-6);
       font-size: var(--text-2xl);
-      letter-spacing: -0.035em;
+      letter-spacing: -0.04em;
+      margin-bottom: var(--space-6);
+      max-width: 11ch;
     }
 
     .hero h1 span {
@@ -420,10 +351,10 @@
     }
 
     .hero-copy {
-      max-width: 660px;
-      margin-bottom: var(--space-8);
-      color: var(--text-muted);
+      color: var(--muted);
       font-size: var(--text-lg);
+      margin-bottom: var(--space-8);
+      max-width: 40rem;
     }
 
     .hero-actions {
@@ -433,223 +364,226 @@
       margin-bottom: var(--space-8);
     }
 
-    .hero-notes {
+    .hero-points {
       display: flex;
       flex-wrap: wrap;
       gap: var(--space-5);
-      color: var(--text-muted);
-      font-size: var(--text-sm);
     }
 
-    .hero-note {
+    .hero-point {
       display: inline-flex;
       align-items: center;
       gap: var(--space-2);
+      color: var(--muted);
+      font-size: var(--text-sm);
+      font-weight: 600;
     }
 
-    .check {
-      display: grid;
+    .dot-check {
       width: 22px;
       height: 22px;
+      display: grid;
       place-items: center;
+      border-radius: 999px;
+      background: var(--primary-soft);
       color: var(--primary);
-      background: var(--primary-light);
-      border-radius: var(--radius-full);
-      font-size: 0.8rem;
+      font-size: 0.85rem;
       font-weight: 800;
     }
 
-    .water-card {
+    .hero-card {
+      min-height: 500px;
       position: relative;
-      min-height: 510px;
       overflow: hidden;
-      padding: var(--space-8);
-      color: #eff9f7;
-      background: #075e62;
       border-radius: var(--radius-xl);
+      background: linear-gradient(160deg, #0a5b60 0%, #123d3f 100%);
+      color: #effbfa;
       box-shadow: var(--shadow-lg);
+      padding: var(--space-8);
     }
 
-    .water-card::before,
-    .water-card::after {
-      position: absolute;
+    .hero-card::before,
+    .hero-card::after {
       content: "";
-      border: 1px solid rgba(255, 255, 255, 0.24);
+      position: absolute;
       border-radius: 50%;
+      border: 1px solid rgba(255, 255, 255, 0.18);
     }
 
-    .water-card::before {
-      width: 390px;
-      height: 390px;
-      right: -160px;
+    .hero-card::before {
+      width: 380px;
+      height: 380px;
+      right: -140px;
       bottom: -120px;
     }
 
-    .water-card::after {
-      width: 280px;
-      height: 280px;
-      right: -85px;
-      bottom: -70px;
+    .hero-card::after {
+      width: 250px;
+      height: 250px;
+      right: -65px;
+      bottom: -55px;
     }
 
-    .water-card-content {
+    .hero-card-inner {
       position: relative;
       z-index: 2;
+      min-height: 436px;
       display: flex;
-      min-height: 446px;
       flex-direction: column;
       justify-content: space-between;
     }
 
-    .water-card-label {
-      color: rgba(255, 255, 255, 0.75);
+    .hero-card-label {
       font-size: var(--text-xs);
-      font-weight: 700;
-      letter-spacing: 0.08em;
       text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: rgba(255, 255, 255, 0.72);
+      font-weight: 700;
     }
 
-    .water-card h2 {
-      max-width: 440px;
-      margin-top: var(--space-4);
+    .hero-card h2 {
       font-size: var(--text-xl);
+      margin-top: var(--space-4);
+      max-width: 13ch;
     }
 
-    .water-card-bottom {
+    .hero-card-stats {
       display: grid;
       gap: var(--space-3);
     }
 
-    .water-stat {
+    .hero-stat {
       display: flex;
-      align-items: flex-end;
       justify-content: space-between;
+      align-items: end;
       gap: var(--space-4);
       padding-top: var(--space-4);
-      border-top: 1px solid rgba(255, 255, 255, 0.22);
+      border-top: 1px solid rgba(255, 255, 255, 0.16);
     }
 
-    .water-stat span {
-      color: rgba(255, 255, 255, 0.72);
+    .hero-stat span {
       font-size: var(--text-sm);
+      color: rgba(255, 255, 255, 0.76);
     }
 
-    .water-stat strong {
+    .hero-stat strong {
       font-size: var(--text-lg);
     }
 
-    .trust-strip {
+    .band {
       background: var(--surface);
-      border-block: 1px solid var(--divider);
+      border-block: 1px solid var(--border);
     }
 
-    .trust-grid {
+    .band-grid {
       display: grid;
-      gap: var(--space-6);
       grid-template-columns: repeat(3, 1fr);
+      gap: var(--space-6);
     }
 
-    .trust-item {
+    .band-item {
       display: flex;
       gap: var(--space-4);
       align-items: flex-start;
     }
 
-    .trust-number {
+    .band-num {
       color: var(--primary);
       font-family: var(--font-display);
       font-size: var(--text-xl);
-      font-weight: 700;
       line-height: 1;
+      font-weight: 700;
     }
 
-    .trust-item strong {
+    .band-item strong {
       display: block;
       margin-bottom: var(--space-1);
     }
 
-    .trust-item p {
-      color: var(--text-muted);
+    .band-item p {
+      color: var(--muted);
       font-size: var(--text-sm);
     }
 
-    .service-layout {
+    .split {
       display: grid;
       gap: var(--space-12);
-      grid-template-columns: 0.75fr 1.25fr;
+      grid-template-columns: 0.78fr 1.22fr;
+      align-items: start;
     }
 
-    .service-list {
+    .cards {
       display: grid;
       gap: var(--space-4);
     }
 
-    .service-card {
+    .card {
       display: grid;
+      grid-template-columns: auto 1fr;
       gap: var(--space-4);
       padding: var(--space-6);
       background: var(--surface);
       border: 1px solid var(--border);
       border-radius: var(--radius-lg);
-      grid-template-columns: auto 1fr;
+      box-shadow: var(--shadow-sm);
     }
 
-    .service-index {
+    .card-index {
       color: var(--primary);
       font-family: var(--font-display);
       font-size: var(--text-lg);
       font-weight: 700;
     }
 
-    .service-card h3 {
+    .card h3 {
       margin-bottom: var(--space-2);
       font-size: var(--text-lg);
     }
 
-    .service-card p {
-      color: var(--text-muted);
+    .card p {
+      color: var(--muted);
       font-size: var(--text-sm);
     }
 
-    .local-water {
-      color: #eff9f7;
-      background: #163c3d;
+    .dark-section {
+      background: #183638;
+      color: #effbfa;
     }
 
-    .local-water .eyebrow {
-      color: #8fd4d1;
+    .dark-section .eyebrow {
+      color: #9bd7d4;
     }
 
-    .local-water .section-copy {
-      color: rgba(255, 255, 255, 0.72);
+    .dark-section .section-copy {
+      color: rgba(255, 255, 255, 0.76);
     }
 
-    .water-table {
+    .water-table-wrap {
       margin-top: var(--space-10);
       overflow-x: auto;
+      border-radius: var(--radius-lg);
+      border: 1px solid rgba(255, 255, 255, 0.14);
     }
 
     table {
       width: 100%;
       border-collapse: collapse;
+      min-width: 720px;
     }
 
     th,
     td {
-      padding: var(--space-4);
       text-align: left;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+      padding: var(--space-4);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+      font-size: var(--text-sm);
     }
 
     th {
-      color: rgba(255, 255, 255, 0.68);
-      font-size: var(--text-xs);
-      letter-spacing: 0.06em;
+      color: rgba(255, 255, 255, 0.72);
       text-transform: uppercase;
-    }
-
-    td {
-      font-size: var(--text-sm);
+      letter-spacing: 0.05em;
+      font-size: var(--text-xs);
     }
 
     td strong {
@@ -658,66 +592,65 @@
 
     .table-note {
       margin-top: var(--space-5);
-      color: rgba(255, 255, 255, 0.68);
       font-size: var(--text-sm);
+      color: rgba(255, 255, 255, 0.72);
     }
 
-    .assessment-intro {
+    .assessment-top {
       display: grid;
-      align-items: end;
-      gap: var(--space-8);
       grid-template-columns: 1fr auto;
+      gap: var(--space-8);
+      align-items: end;
     }
 
     .assessment-shell {
-      display: grid;
       margin-top: var(--space-10);
-      overflow: hidden;
+      display: grid;
+      grid-template-columns: minmax(0, 1.25fr) minmax(300px, 0.75fr);
       background: var(--surface);
       border: 1px solid var(--border);
       border-radius: var(--radius-xl);
+      overflow: hidden;
       box-shadow: var(--shadow-md);
-      grid-template-columns: minmax(0, 1.3fr) minmax(310px, 0.7fr);
     }
 
-    .form-panel {
-      padding: clamp(var(--space-6), 5vw, var(--space-12));
+    .assessment-form-panel {
+      padding: clamp(var(--space-6), 4vw, var(--space-12));
     }
 
-    .recommendation-panel {
+    .assessment-result-panel {
       padding: clamp(var(--space-6), 4vw, var(--space-10));
-      background: var(--surface-offset);
+      background: var(--surface-2);
       border-left: 1px solid var(--border);
     }
 
     .progress {
       display: grid;
+      grid-template-columns: repeat(4, 1fr);
       gap: var(--space-2);
       margin-bottom: var(--space-10);
-      grid-template-columns: repeat(4, 1fr);
     }
 
-    .progress-step {
+    .progress-bar {
       height: 5px;
-      overflow: hidden;
+      border-radius: 999px;
       background: var(--border);
-      border-radius: var(--radius-full);
     }
 
-    .progress-step.active {
+    .progress-bar.active {
       background: var(--primary);
     }
 
     .form-step {
       display: none;
-      animation: stepIn 260ms ease both;
+      animation: fadeUp 220ms ease both;
     }
 
     .form-step.active {
       display: block;
     }
 
-    @keyframes stepIn {
+    @keyframes fadeUp {
       from {
         opacity: 0;
         transform: translateY(8px);
@@ -729,20 +662,20 @@
     }
 
     .form-step h3 {
-      margin-bottom: var(--space-2);
       font-size: var(--text-xl);
+      margin-bottom: var(--space-2);
     }
 
     .step-copy {
-      margin-bottom: var(--space-8);
-      color: var(--text-muted);
+      color: var(--muted);
       font-size: var(--text-sm);
+      margin-bottom: var(--space-8);
     }
 
     .field-grid {
       display: grid;
-      gap: var(--space-5);
       grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: var(--space-5);
     }
 
     .field {
@@ -761,7 +694,7 @@
     }
 
     .required {
-      color: var(--error);
+      color: var(--danger);
     }
 
     input,
@@ -769,11 +702,16 @@
     textarea {
       width: 100%;
       min-height: 48px;
-      padding: var(--space-3) var(--space-4);
-      color: var(--text);
-      background: var(--surface-2);
-      border: 1px solid var(--border);
       border-radius: var(--radius-md);
+      border: 1px solid var(--border);
+      background: var(--white);
+      padding: var(--space-3) var(--space-4);
+    }
+
+    [data-theme="dark"] input,
+    [data-theme="dark"] select,
+    [data-theme="dark"] textarea {
+      background: #1a1d1c;
     }
 
     textarea {
@@ -784,19 +722,20 @@
     input:focus,
     select:focus,
     textarea:focus {
+      outline: none;
       border-color: var(--primary);
       box-shadow: 0 0 0 3px color-mix(in srgb, var(--primary) 18%, transparent);
-      outline: none;
     }
 
     fieldset {
-      border: 0;
+      border: none;
     }
 
     .choice-grid {
       display: grid;
-      gap: var(--space-3);
       grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: var(--space-3);
+      margin-top: var(--space-3);
     }
 
     .choice {
@@ -805,58 +744,108 @@
 
     .choice input {
       position: absolute;
+      opacity: 0;
       width: 1px;
       height: 1px;
-      opacity: 0;
     }
 
     .choice label {
       display: flex;
-      min-height: 54px;
       align-items: center;
       gap: var(--space-3);
+      min-height: 54px;
       padding: var(--space-3) var(--space-4);
-      color: var(--text-muted);
-      background: var(--surface-2);
-      border: 1px solid var(--border);
       border-radius: var(--radius-md);
+      border: 1px solid var(--border);
+      background: var(--white);
+      color: var(--muted);
       cursor: pointer;
     }
 
+    [data-theme="dark"] .choice label {
+      background: #1a1d1c;
+    }
+
     .choice label::before {
+      content: "";
       width: 18px;
       height: 18px;
-      content: "";
       flex: 0 0 auto;
       border: 2px solid var(--border);
-      border-radius: var(--radius-sm);
+      border-radius: 0.35rem;
     }
 
     .choice input:checked + label {
-      color: var(--text);
-      background: var(--primary-light);
+      background: var(--primary-soft);
       border-color: var(--primary);
+      color: var(--text);
     }
 
     .choice input:checked + label::before {
-      background: var(--primary);
       border-color: var(--primary);
-      box-shadow: inset 0 0 0 4px var(--primary-light);
+      background: var(--primary);
+      box-shadow: inset 0 0 0 4px var(--primary-soft);
     }
 
-    .choice input:focus-visible + label {
-      outline: 3px solid var(--primary);
-      outline-offset: 2px;
-    }
-
-    .form-actions {
+    .actions {
+      margin-top: var(--space-8);
       display: flex;
       justify-content: space-between;
       gap: var(--space-3);
-      margin-top: var(--space-8);
     }
 
-    .form-message {
+    .result-panel-title {
+      font-size: var(--text-lg);
+      margin-bottom: var(--space-5);
+    }
+
+    .result-empty {
+      color: var(--muted);
+      font-size: var(--text-sm);
+    }
+
+    .result-list {
+      display: grid;
+      gap: var(--space-3);
+    }
+
+    .result-card {
+      padding: var(--space-4);
+      border-radius: var(--radius-md);
+      background: var(--surface);
+      border: 1px solid var(--border);
+    }
+
+    .result-label {
+      display: block;
+      margin-bottom: var(--space-1);
+      color: var(--muted);
+      font-size: var(--text-xs);
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .result-value {
+      font-weight: 700;
+    }
+
+    .result-detail {
+      margin-top: var(--space-1);
+      color: var(--muted);
+      font-size: var(--text-xs);
+    }
+
+    .notice {
+      margin-top: var(--space-5);
+      padding: var(--space-4);
+      border-radius: var(--radius-md);
+      background: color-mix(in srgb, var(--warning) 12%, var(--surface));
+      color: var(--warning);
+      font-size: var(--text-xs);
+    }
+
+    .message {
       display: none;
       margin-top: var(--space-5);
       padding: var(--space-4);
@@ -864,102 +853,52 @@
       font-size: var(--text-sm);
     }
 
-    .form-message.success {
+    .message.success {
       display: block;
       color: var(--success);
-      background: var(--success-light);
+      background: color-mix(in srgb, var(--success) 14%, var(--surface));
     }
 
-    .form-message.error {
+    .message.error {
       display: block;
-      color: var(--error);
-      background: var(--error-light);
-    }
-
-    .recommendation-panel h3 {
-      margin-bottom: var(--space-5);
-      font-size: var(--text-lg);
-    }
-
-    .recommendation-empty {
-      color: var(--text-muted);
-      font-size: var(--text-sm);
-    }
-
-    .recommendation-list {
-      display: grid;
-      gap: var(--space-3);
-    }
-
-    .recommendation-card {
-      padding: var(--space-4);
-      background: var(--surface-2);
-      border: 1px solid var(--border);
-      border-radius: var(--radius-md);
-    }
-
-    .recommendation-label {
-      display: block;
-      margin-bottom: var(--space-1);
-      color: var(--text-muted);
-      font-size: var(--text-xs);
-      font-weight: 700;
-      letter-spacing: 0.05em;
-      text-transform: uppercase;
-    }
-
-    .recommendation-value {
-      font-weight: 700;
-    }
-
-    .recommendation-detail {
-      margin-top: var(--space-1);
-      color: var(--text-muted);
-      font-size: var(--text-xs);
-    }
-
-    .verification-notice {
-      margin-top: var(--space-5);
-      padding: var(--space-4);
-      color: var(--warning);
-      background: var(--warning-light);
-      border-radius: var(--radius-md);
-      font-size: var(--text-xs);
+      color: var(--danger);
+      background: color-mix(in srgb, var(--danger) 14%, var(--surface));
     }
 
     .process-grid {
-      display: grid;
-      gap: var(--space-8);
       margin-top: var(--space-10);
+      display: grid;
       grid-template-columns: repeat(4, 1fr);
+      gap: var(--space-8);
     }
 
-    .process-step {
+    .process-card {
       border-top: 1px solid var(--border);
       padding-top: var(--space-5);
     }
 
-    .process-step span {
+    .process-card span {
       color: var(--primary);
       font-family: var(--font-display);
       font-size: var(--text-xl);
       font-weight: 700;
+      line-height: 1;
     }
 
-    .process-step h3 {
+    .process-card h3 {
       margin-block: var(--space-3) var(--space-2);
       font-size: var(--text-lg);
     }
 
-    .process-step p {
-      color: var(--text-muted);
+    .process-card p {
+      color: var(--muted);
       font-size: var(--text-sm);
     }
 
     .faq-layout {
       display: grid;
+      grid-template-columns: 0.72fr 1.28fr;
       gap: var(--space-12);
-      grid-template-columns: 0.7fr 1.3fr;
     }
 
     .faq-list {
@@ -975,11 +914,11 @@
 
     summary {
       position: relative;
-      min-height: 58px;
-      padding: var(--space-4) 3.5rem var(--space-4) var(--space-5);
+      padding: var(--space-4) 3.4rem var(--space-4) var(--space-5);
+      list-style: none;
       cursor: pointer;
       font-weight: 700;
-      list-style: none;
+      min-height: 58px;
     }
 
     summary::-webkit-details-marker {
@@ -987,13 +926,13 @@
     }
 
     summary::after {
-      position: absolute;
-      top: 50%;
-      right: var(--space-5);
       content: "+";
-      color: var(--primary);
-      font-size: var(--text-lg);
+      position: absolute;
+      right: var(--space-5);
+      top: 50%;
       transform: translateY(-50%);
+      font-size: var(--text-lg);
+      color: var(--primary);
     }
 
     details[open] summary::after {
@@ -1002,60 +941,62 @@
 
     .faq-answer {
       padding: 0 var(--space-5) var(--space-5);
-      color: var(--text-muted);
+      color: var(--muted);
       font-size: var(--text-sm);
     }
 
-    .final-cta {
+    .cta {
       padding-block: clamp(var(--space-16), 8vw, var(--space-24));
     }
 
     .cta-card {
       display: grid;
+      grid-template-columns: 1fr auto;
       align-items: center;
       gap: var(--space-8);
-      padding: clamp(var(--space-8), 6vw, var(--space-16));
-      color: #eff9f7;
-      background: #075e62;
+      padding: clamp(var(--space-8), 5vw, var(--space-16));
       border-radius: var(--radius-xl);
-      grid-template-columns: 1fr auto;
+      background: linear-gradient(160deg, #0a5b60 0%, #123d3f 100%);
+      color: #effbfa;
+      box-shadow: var(--shadow-lg);
     }
 
     .cta-card h2 {
-      max-width: 700px;
-      margin-bottom: var(--space-3);
       font-size: var(--text-xl);
+      margin-bottom: var(--space-3);
+      max-width: 16ch;
     }
 
     .cta-card p {
-      color: rgba(255, 255, 255, 0.74);
+      color: rgba(255, 255, 255, 0.78);
     }
 
-    .cta-card .button-secondary {
-      color: #123433;
+    .cta-card .btn-secondary {
       background: #ffffff;
       border-color: #ffffff;
+      color: #163638;
     }
 
-    .site-footer {
-      padding-block: var(--space-12);
+    .footer {
       background: var(--surface);
-      border-top: 1px solid var(--divider);
+      border-top: 1px solid var(--border);
+      padding-block: var(--space-12);
     }
 
     .footer-grid {
       display: grid;
+      grid-template-columns: 1.4fr 0.7fr 0.9fr;
       gap: var(--space-10);
-      grid-template-columns: 1.4fr 0.6fr 0.8fr;
     }
 
-    .footer-description {
-      margin-top: var(--space-4);
-      color: var(--text-muted);
+    .footer-copy {
+      color: var(--muted);
       font-size: var(--text-sm);
+      margin-top: var(--space-4);
+      max-width: 42ch;
     }
 
-    .footer-heading {
+    .footer-title {
       margin-bottom: var(--space-3);
       font-size: var(--text-sm);
       font-weight: 700;
@@ -1064,46 +1005,56 @@
     .footer-list {
       display: grid;
       gap: var(--space-2);
-      color: var(--text-muted);
-      font-size: var(--text-sm);
       list-style: none;
+      color: var(--muted);
+      font-size: var(--text-sm);
     }
 
     .footer-bottom {
+      margin-top: var(--space-10);
+      padding-top: var(--space-6);
+      border-top: 1px solid var(--border);
       display: flex;
       justify-content: space-between;
       gap: var(--space-6);
-      margin-top: var(--space-10);
-      padding-top: var(--space-6);
-      color: var(--text-muted);
-      border-top: 1px solid var(--divider);
+      color: var(--muted);
       font-size: var(--text-xs);
     }
 
-    .legal-note {
-      max-width: 840px;
+    .legal {
+      max-width: 820px;
     }
 
-    .hidden {
-      display: none !important;
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      white-space: nowrap;
+      clip: rect(0, 0, 0, 0);
+      border: 0;
     }
 
-    @media (max-width: 900px) {
+    @media (max-width: 980px) {
       .nav-links {
         position: fixed;
-        inset: 77px 0 auto;
+        inset: 76px 0 auto;
         display: none;
-        padding: var(--space-6);
         background: var(--bg);
         border-bottom: 1px solid var(--border);
         box-shadow: var(--shadow-md);
+        padding: var(--space-6);
+        flex-direction: column;
+        align-items: flex-start;
       }
 
       .nav-links.open {
-        display: grid;
+        display: flex;
       }
 
-      .menu-button {
+      .menu-btn {
         display: grid;
       }
 
@@ -1112,58 +1063,46 @@
       }
 
       .hero-grid,
-      .service-layout,
+      .split,
       .assessment-shell,
       .faq-layout,
       .footer-grid {
         grid-template-columns: 1fr;
       }
 
-      .water-card {
-        min-height: 420px;
+      .assessment-result-panel {
+        border-left: none;
+        border-top: 1px solid var(--border);
       }
 
-      .water-card-content {
-        min-height: 356px;
-      }
-
-      .trust-grid,
+      .band-grid,
       .process-grid {
         grid-template-columns: repeat(2, 1fr);
       }
 
-      .assessment-intro {
-        align-items: start;
-        grid-template-columns: 1fr;
-      }
-
-      .recommendation-panel {
-        border-top: 1px solid var(--border);
-        border-left: 0;
-      }
-
       .cta-card {
-        align-items: start;
         grid-template-columns: 1fr;
+        align-items: start;
+      }
+
+      .assessment-top {
+        grid-template-columns: 1fr;
+        align-items: start;
       }
     }
 
-    @media (max-width: 620px) {
-      .container {
-        width: min(calc(100% - 1.25rem), var(--content));
-      }
-
+    @media (max-width: 640px) {
       .hero-actions,
-      .form-actions {
+      .actions {
         flex-direction: column;
       }
 
-      .hero-actions .button,
-      .form-actions .button {
+      .hero-actions .btn,
+      .actions .btn {
         width: 100%;
       }
 
-      .trust-grid,
+      .band-grid,
       .process-grid,
       .field-grid,
       .choice-grid {
@@ -1174,22 +1113,17 @@
         grid-column: auto;
       }
 
-      .water-card {
-        min-height: 380px;
+      .hero-card {
+        min-height: 390px;
         padding: var(--space-6);
       }
 
-      .water-card-content {
-        min-height: 328px;
+      .hero-card-inner {
+        min-height: 330px;
       }
 
       .footer-bottom {
         flex-direction: column;
-      }
-
-      th,
-      td {
-        min-width: 130px;
       }
     }
 
@@ -1197,26 +1131,20 @@
       *,
       *::before,
       *::after {
-        scroll-behavior: auto !important;
         animation-duration: 0.01ms !important;
         transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
       }
     }
   </style>
 </head>
-
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
+  <a href="#main" class="sr-only">Skip to content</a>
 
   <header class="site-header">
     <div class="container nav">
       <a class="brand" href="#top" aria-label="Front Range Water Pros home">
-        <svg
-          class="brand-mark"
-          viewBox="0 0 52 52"
-          fill="none"
-          aria-hidden="true"
-        >
+        <svg class="brand-mark" viewBox="0 0 52 52" fill="none" aria-hidden="true">
           <path
             d="M6 34L18 20L25 27L34 15L46 34"
             stroke="currentColor"
@@ -1231,46 +1159,36 @@
             stroke-linecap="round"
           />
         </svg>
-
         <span>
           Front Range Water Pros
-          <span class="brand-subtitle">Colorado water treatment</span>
+          <span class="brand-sub">Colorado water treatment</span>
         </span>
       </a>
 
-      <nav aria-label="Primary navigation">
+      <nav aria-label="Primary">
         <ul class="nav-links" id="navLinks">
           <li><a href="#services">Solutions</a></li>
           <li><a href="#local-water">Local water</a></li>
-          <li><a href="#assessment">Water assessment</a></li>
+          <li><a href="#assessment">Assessment</a></li>
           <li><a href="#process">Process</a></li>
           <li><a href="#faq">FAQ</a></li>
         </ul>
       </nav>
 
       <div class="nav-actions">
-        <button
-          class="icon-button"
-          id="themeToggle"
-          aria-label="Switch color theme"
-          type="button"
-        >
-          <span aria-hidden="true">◐</span>
+        <button class="icon-btn" id="themeToggle" type="button" aria-label="Toggle theme">
+          ◐
         </button>
-
-        <a class="button button-primary desktop-cta" href="#assessment">
-          Get assessed
-        </a>
-
+        <a class="btn btn-primary desktop-cta" href="#assessment">Get assessed</a>
         <button
-          class="icon-button menu-button"
+          class="icon-btn menu-btn"
           id="menuToggle"
-          aria-label="Open navigation"
-          aria-expanded="false"
-          aria-controls="navLinks"
           type="button"
+          aria-label="Open navigation"
+          aria-controls="navLinks"
+          aria-expanded="false"
         >
-          <span aria-hidden="true">☰</span>
+          ☰
         </button>
       </div>
     </div>
@@ -1281,67 +1199,42 @@
       <div class="container hero-grid">
         <div>
           <span class="eyebrow">Serving the Denver metro</span>
-
-          <h1>
-            Better water starts with
-            <span>the right information.</span>
-          </h1>
-
+          <h1>Better water starts with <span>the right information.</span></h1>
           <p class="hero-copy">
-            Get a preliminary water-treatment recommendation based on your
-            utility, household demand and the problems you actually want to
-            solve.
+            We help Colorado homeowners evaluate whole-home filtration,
+            softening, and drinking-water options using utility data,
+            household demand, and the problems they actually want to solve.
           </p>
 
           <div class="hero-actions">
-            <a class="button button-primary" href="#assessment">
-              Start the water assessment
-            </a>
-
-            <a class="button button-secondary" href="#services">
-              Explore solutions
-            </a>
+            <a class="btn btn-primary" href="#assessment">Start the assessment</a>
+            <a class="btn btn-secondary" href="#services">Explore solutions</a>
           </div>
 
-          <div class="hero-notes">
-            <span class="hero-note">
-              <span class="check">✓</span>
-              Location-aware guidance
-            </span>
-
-            <span class="hero-note">
-              <span class="check">✓</span>
-              No-pressure consultation
-            </span>
-
-            <span class="hero-note">
-              <span class="check">✓</span>
-              Licensed installation professionals
-            </span>
+          <div class="hero-points">
+            <span class="hero-point"><span class="dot-check">✓</span>Location-aware guidance</span>
+            <span class="hero-point"><span class="dot-check">✓</span>Preliminary sizing logic</span>
+            <span class="hero-point"><span class="dot-check">✓</span>Verification before ordering</span>
           </div>
         </div>
 
-        <aside class="water-card" aria-label="Water assessment preview">
-          <div class="water-card-content">
+        <aside class="hero-card" aria-label="Water planning summary">
+          <div class="hero-card-inner">
             <div>
-              <span class="water-card-label">Colorado water profile</span>
-              <h2>
-                Different communities can require different treatment.
-              </h2>
+              <span class="hero-card-label">Colorado planning baseline</span>
+              <h2>Different communities can justify different equipment.</h2>
             </div>
 
-            <div class="water-card-bottom">
-              <div class="water-stat">
-                <span>Denver planning average</span>
+            <div class="hero-card-stats">
+              <div class="hero-stat">
+                <span>Denver Water planning average</span>
                 <strong>≈ 5.2 GPG</strong>
               </div>
-
-              <div class="water-stat">
-                <span>Aurora planning average</span>
+              <div class="hero-stat">
+                <span>Aurora Water planning average</span>
                 <strong>≈ 8.0 GPG</strong>
               </div>
-
-              <div class="water-stat">
+              <div class="hero-stat">
                 <span>Westminster planning average</span>
                 <strong>≈ 7.4 GPG</strong>
               </div>
@@ -1351,91 +1244,86 @@
       </div>
     </section>
 
-    <section class="trust-strip section-compact" aria-label="Our approach">
-      <div class="container trust-grid">
-        <article class="trust-item">
-          <span class="trust-number">01</span>
+    <section class="band section">
+      <div class="container band-grid">
+        <article class="band-item">
+          <span class="band-num">01</span>
           <div>
-            <strong>Identify the problem</strong>
-            <p>Treat the concern instead of selling unnecessary equipment.</p>
+            <strong>Identify the water problem</strong>
+            <p>Treat the issue that matters instead of selling unnecessary equipment.</p>
           </div>
         </article>
 
-        <article class="trust-item">
-          <span class="trust-number">02</span>
+        <article class="band-item">
+          <span class="band-num">02</span>
           <div>
-            <strong>Size for the home</strong>
-            <p>Account for occupants, bathrooms and simultaneous demand.</p>
+            <strong>Size for the household</strong>
+            <p>Occupants, bathrooms, and simultaneous demand affect performance.</p>
           </div>
         </article>
 
-        <article class="trust-item">
-          <span class="trust-number">03</span>
+        <article class="band-item">
+          <span class="band-num">03</span>
           <div>
             <strong>Verify before ordering</strong>
-            <p>Confirm water quality, pressure, flow and installation conditions.</p>
+            <p>Water chemistry, pressure, flow, drain, and space still need confirmation.</p>
           </div>
         </article>
       </div>
     </section>
 
     <section class="section" id="services">
-      <div class="container service-layout">
+      <div class="container split">
         <div>
           <span class="eyebrow">Treatment options</span>
-
-          <h2 class="section-heading">
-            Match the system to the water—not the other way around.
-          </h2>
-
+          <h2 class="section-title">Match the system to the water—not the other way around.</h2>
           <p class="section-copy">
-            Whole-home treatment addresses water entering the house. A separate
-            point-of-use system may be appropriate when the main objective is
-            drinking and cooking water.
+            Whole-home treatment addresses water entering the house. Point-of-use
+            systems may make sense when the primary concern is drinking or cooking water.
           </p>
         </div>
 
-        <div class="service-list">
-          <article class="service-card">
-            <span class="service-index">01</span>
+        <div class="cards">
+          <article class="card">
+            <span class="card-index">01</span>
             <div>
               <h3>Whole-home carbon filtration</h3>
               <p>
-                Designed for taste, odor and disinfectant reduction. Media,
-                service flow and certification must match the water and home.
+                Intended for taste, odor, and disinfectant reduction when the media,
+                service flow, and certification match the actual water conditions.
               </p>
             </div>
           </article>
 
-          <article class="service-card">
-            <span class="service-index">02</span>
+          <article class="card">
+            <span class="card-index">02</span>
             <div>
               <h3>Water softening</h3>
               <p>
-                Reduces hardness minerals associated with scale, spotting and
-                soap inefficiency. Recommended after hardness is measured.
+                Useful when measured hardness is contributing to scale, spotting,
+                soap inefficiency, or appliance concerns.
               </p>
             </div>
           </article>
 
-          <article class="service-card">
-            <span class="service-index">03</span>
+          <article class="card">
+            <span class="card-index">03</span>
             <div>
               <h3>Reverse osmosis drinking water</h3>
               <p>
-                Point-of-use treatment for customers seeking an additional
+                Point-of-use treatment for customers who want an additional
                 barrier for drinking and cooking water.
               </p>
             </div>
           </article>
 
-          <article class="service-card">
-            <span class="service-index">04</span>
+          <article class="card">
+            <span class="card-index">04</span>
             <div>
               <h3>Private-well treatment</h3>
               <p>
-                Custom treatment based on certified laboratory results,
-                well-pump capability and the property’s plumbing conditions.
+                Requires certified lab results and property-specific hydraulic
+                review rather than a municipal utility average.
               </p>
             </div>
           </article>
@@ -1443,21 +1331,16 @@
       </div>
     </section>
 
-    <section class="local-water section" id="local-water">
+    <section class="section dark-section" id="local-water">
       <div class="container">
         <span class="eyebrow">Local planning data</span>
-
-        <h2 class="section-heading">
-          Water hardness varies across the Front Range.
-        </h2>
-
+        <h2 class="section-title">Water hardness varies across the Front Range.</h2>
         <p class="section-copy">
-          These values are useful for initial planning—not final equipment
-          programming. The service address, actual water provider and onsite
-          test should be confirmed before equipment is selected.
+          These values are useful for initial planning only. Final equipment
+          selection should rely on the service address, actual utility, and onsite test.
         </p>
 
-        <div class="water-table">
+        <div class="water-table-wrap">
           <table>
             <thead>
               <tr>
@@ -1467,7 +1350,6 @@
                 <th>Initial sales approach</th>
               </tr>
             </thead>
-
             <tbody>
               <tr>
                 <td><strong>Denver Water</strong></td>
@@ -1475,21 +1357,18 @@
                 <td>Soft to moderately hard</td>
                 <td>Test before recommending a softener</td>
               </tr>
-
               <tr>
                 <td><strong>Aurora Water</strong></td>
                 <td>Approximately 8.0 GPG</td>
                 <td>Moderately hard to hard</td>
                 <td>Softening is often more relevant</td>
               </tr>
-
               <tr>
                 <td><strong>Westminster Water</strong></td>
                 <td>Approximately 7.4 GPG</td>
                 <td>Moderately hard to hard</td>
-                <td>Test and evaluate scale concerns</td>
+                <td>Evaluate scale concerns and verify onsite</td>
               </tr>
-
               <tr>
                 <td><strong>Private well</strong></td>
                 <td>Property-specific</td>
@@ -1501,62 +1380,46 @@
         </div>
 
         <p class="table-note">
-          One grain per gallon is approximately 17.1 milligrams per liter as
-          calcium carbonate. Utility averages can vary by source blend and season.
+          Planning figures are not final engineering measurements. One grain
+          per gallon is approximately 17.1 mg/L as calcium carbonate.
         </p>
       </div>
     </section>
 
     <section class="section" id="assessment">
       <div class="container">
-        <div class="assessment-intro">
+        <div class="assessment-top">
           <div>
-            <span class="eyebrow">Free preliminary assessment</span>
-
-            <h2 class="section-heading">
-              Tell us about your water and home.
-            </h2>
-
+            <span class="eyebrow">Preliminary water assessment</span>
+            <h2 class="section-title">Tell us about the home, the water source, and the problem.</h2>
             <p class="section-copy">
-              This assessment estimates daily volume, likely peak demand and
-              the treatment categories worth evaluating.
+              This tool estimates indoor volume, likely service-flow target,
+              and treatment categories worth evaluating.
             </p>
           </div>
 
-          <span class="button button-secondary" aria-hidden="true">
-            About 3 minutes
-          </span>
+          <span class="btn btn-secondary" aria-hidden="true">About 3 minutes</span>
         </div>
 
         <div class="assessment-shell">
-          <div class="form-panel">
-            <!--
-              FORM SETUP:
-              1. Create a free form at https://formspree.io
-              2. Replace YOUR_FORM_ID in the JavaScript CONFIG section.
-              3. Replace the placeholder phone and email throughout this file.
-            -->
-
+          <div class="assessment-form-panel">
             <form id="assessmentForm" novalidate>
-              <div class="progress" aria-label="Assessment progress">
-                <span class="progress-step active"></span>
-                <span class="progress-step"></span>
-                <span class="progress-step"></span>
-                <span class="progress-step"></span>
+              <div class="progress" aria-label="Form progress">
+                <span class="progress-bar active"></span>
+                <span class="progress-bar"></span>
+                <span class="progress-bar"></span>
+                <span class="progress-bar"></span>
               </div>
 
               <section class="form-step active" data-step="0">
                 <h3>Location and water source</h3>
                 <p class="step-copy">
-                  Location helps establish the correct utility planning baseline.
+                  City and utility help establish the correct planning baseline.
                 </p>
 
                 <div class="field-grid">
                   <div class="field">
-                    <label for="city">
-                      City <span class="required">*</span>
-                    </label>
-
+                    <label for="city">City <span class="required">*</span></label>
                     <select id="city" name="city" required>
                       <option value="">Choose a city</option>
                       <option value="Denver">Denver</option>
@@ -1572,10 +1435,7 @@
                   </div>
 
                   <div class="field">
-                    <label for="zip">
-                      ZIP code <span class="required">*</span>
-                    </label>
-
+                    <label for="zip">ZIP code <span class="required">*</span></label>
                     <input
                       id="zip"
                       name="zip"
@@ -1585,14 +1445,11 @@
                       maxlength="5"
                       placeholder="80202"
                       required
-                    >
+                    />
                   </div>
 
                   <div class="field">
-                    <label for="waterSource">
-                      Water source <span class="required">*</span>
-                    </label>
-
+                    <label for="waterSource">Water source <span class="required">*</span></label>
                     <select id="waterSource" name="waterSource" required>
                       <option value="">Choose a source</option>
                       <option value="municipal">Municipal water</option>
@@ -1603,7 +1460,6 @@
 
                   <div class="field">
                     <label for="utility">Water provider</label>
-
                     <select id="utility" name="utility">
                       <option value="">Choose if known</option>
                       <option value="Denver Water">Denver Water</option>
@@ -1616,73 +1472,42 @@
 
                   <div class="field field-full">
                     <label for="address">Service address</label>
-
                     <input
                       id="address"
                       name="address"
                       type="text"
                       autocomplete="street-address"
                       placeholder="Street address"
-                    >
+                    />
                   </div>
                 </div>
 
-                <div class="form-actions">
+                <div class="actions">
                   <span></span>
-                  <button class="button button-primary next-step" type="button">
-                    Continue
-                  </button>
+                  <button class="btn btn-primary next-step" type="button">Continue</button>
                 </div>
               </section>
 
               <section class="form-step" data-step="1">
                 <h3>Household demand</h3>
                 <p class="step-copy">
-                  Daily use and peak flow affect system capacity and pressure.
+                  Daily use and peak demand affect system capacity and pressure.
                 </p>
 
                 <div class="field-grid">
                   <div class="field">
-                    <label for="occupants">
-                      Full-time occupants <span class="required">*</span>
-                    </label>
-
-                    <input
-                      id="occupants"
-                      name="occupants"
-                      type="number"
-                      min="1"
-                      max="15"
-                      value="4"
-                      required
-                    >
+                    <label for="occupants">Full-time occupants <span class="required">*</span></label>
+                    <input id="occupants" name="occupants" type="number" min="1" max="15" value="4" required />
                   </div>
 
                   <div class="field">
-                    <label for="bathrooms">
-                      Full bathrooms <span class="required">*</span>
-                    </label>
-
-                    <input
-                      id="bathrooms"
-                      name="bathrooms"
-                      type="number"
-                      min="1"
-                      max="12"
-                      value="2"
-                      required
-                    >
+                    <label for="bathrooms">Full bathrooms <span class="required">*</span></label>
+                    <input id="bathrooms" name="bathrooms" type="number" min="1" max="12" value="2" required />
                   </div>
 
                   <div class="field">
-                    <label for="simultaneousShowers">
-                      Maximum simultaneous showers
-                    </label>
-
-                    <select
-                      id="simultaneousShowers"
-                      name="simultaneousShowers"
-                    >
+                    <label for="simultaneousShowers">Maximum simultaneous showers</label>
+                    <select id="simultaneousShowers" name="simultaneousShowers">
                       <option value="1">One</option>
                       <option value="2">Two</option>
                       <option value="3">Three or more</option>
@@ -1691,7 +1516,6 @@
 
                   <div class="field">
                     <label for="irrigation">Irrigation connection</label>
-
                     <select id="irrigation" name="irrigation">
                       <option value="bypass">Can bypass treatment</option>
                       <option value="treated">May pass through treatment</option>
@@ -1703,152 +1527,72 @@
 
                 <fieldset style="margin-top: 1.5rem;">
                   <legend>High-flow fixtures</legend>
-
-                  <div class="choice-grid" style="margin-top: 0.75rem;">
+                  <div class="choice-grid">
                     <div class="choice">
-                      <input
-                        id="largeTub"
-                        name="features"
-                        value="Large soaking or jetted tub"
-                        type="checkbox"
-                      >
+                      <input id="largeTub" name="features" value="Large soaking or jetted tub" type="checkbox" />
                       <label for="largeTub">Large soaking or jetted tub</label>
                     </div>
-
                     <div class="choice">
-                      <input
-                        id="bodySprays"
-                        name="features"
-                        value="Body sprays or multiple showerheads"
-                        type="checkbox"
-                      >
-                      <label for="bodySprays">
-                        Body sprays or multiple showerheads
-                      </label>
+                      <input id="bodySprays" name="features" value="Body sprays or multiple showerheads" type="checkbox" />
+                      <label for="bodySprays">Body sprays or multiple showerheads</label>
                     </div>
-
                     <div class="choice">
-                      <input
-                        id="tankless"
-                        name="features"
-                        value="Tankless water heater"
-                        type="checkbox"
-                      >
+                      <input id="tankless" name="features" value="Tankless water heater" type="checkbox" />
                       <label for="tankless">Tankless water heater</label>
                     </div>
-
                     <div class="choice">
-                      <input
-                        id="fireSprinkler"
-                        name="features"
-                        value="Fire sprinkler system"
-                        type="checkbox"
-                      >
+                      <input id="fireSprinkler" name="features" value="Fire sprinkler system" type="checkbox" />
                       <label for="fireSprinkler">Fire sprinkler system</label>
                     </div>
                   </div>
                 </fieldset>
 
-                <div class="form-actions">
-                  <button class="button button-secondary previous-step" type="button">
-                    Back
-                  </button>
-
-                  <button class="button button-primary next-step" type="button">
-                    Continue
-                  </button>
+                <div class="actions">
+                  <button class="btn btn-secondary previous-step" type="button">Back</button>
+                  <button class="btn btn-primary next-step" type="button">Continue</button>
                 </div>
               </section>
 
               <section class="form-step" data-step="2">
                 <h3>What would you like to improve?</h3>
-
                 <p class="step-copy">
-                  Select every concern that applies. Treatment claims must
-                  ultimately match verified water conditions and certifications.
+                  Select all concerns that apply. Final treatment claims still
+                  require verified water conditions and appropriate certifications.
                 </p>
 
                 <fieldset>
-                  <legend class="hidden">Water concerns</legend>
-
+                  <legend class="sr-only">Water concerns</legend>
                   <div class="choice-grid">
                     <div class="choice">
-                      <input
-                        id="taste"
-                        name="concerns"
-                        value="Chlorine taste or odor"
-                        type="checkbox"
-                      >
+                      <input id="taste" name="concerns" value="Chlorine taste or odor" type="checkbox" />
                       <label for="taste">Chlorine taste or odor</label>
                     </div>
-
                     <div class="choice">
-                      <input
-                        id="scale"
-                        name="concerns"
-                        value="Scale and water spots"
-                        type="checkbox"
-                      >
+                      <input id="scale" name="concerns" value="Scale and water spots" type="checkbox" />
                       <label for="scale">Scale and water spots</label>
                     </div>
-
                     <div class="choice">
-                      <input
-                        id="drinking"
-                        name="concerns"
-                        value="Better drinking water"
-                        type="checkbox"
-                      >
+                      <input id="drinking" name="concerns" value="Better drinking water" type="checkbox" />
                       <label for="drinking">Better drinking water</label>
                     </div>
-
                     <div class="choice">
-                      <input
-                        id="lead"
-                        name="concerns"
-                        value="Lead concern"
-                        type="checkbox"
-                      >
+                      <input id="lead" name="concerns" value="Lead concern" type="checkbox" />
                       <label for="lead">Lead concern</label>
                     </div>
-
                     <div class="choice">
-                      <input
-                        id="pfas"
-                        name="concerns"
-                        value="PFAS concern"
-                        type="checkbox"
-                      >
+                      <input id="pfas" name="concerns" value="PFAS concern" type="checkbox" />
                       <label for="pfas">PFAS concern</label>
                     </div>
-
                     <div class="choice">
-                      <input
-                        id="sediment"
-                        name="concerns"
-                        value="Sediment, sand or rust"
-                        type="checkbox"
-                      >
+                      <input id="sediment" name="concerns" value="Sediment, sand or rust" type="checkbox" />
                       <label for="sediment">Sediment, sand or rust</label>
                     </div>
-
                     <div class="choice">
-                      <input
-                        id="staining"
-                        name="concerns"
-                        value="Orange or black staining"
-                        type="checkbox"
-                      >
+                      <input id="staining" name="concerns" value="Orange or black staining" type="checkbox" />
                       <label for="staining">Orange or black staining</label>
                     </div>
-
                     <div class="choice">
-                      <input
-                        id="sulfur"
-                        name="concerns"
-                        value="Rotten-egg odor"
-                        type="checkbox"
-                      >
+                      <input id="sulfur" name="concerns" value="Rotten-egg odor" type="checkbox" />
                       <label for="sulfur">Rotten-egg odor</label>
                     </div>
                   </div>
@@ -1856,28 +1600,21 @@
 
                 <div class="field" style="margin-top: 1.5rem;">
                   <label for="notes">Anything else we should know?</label>
-
                   <textarea
                     id="notes"
                     name="notes"
-                    placeholder="Existing equipment, recent test results, installation timing or other concerns"
+                    placeholder="Existing equipment, recent test results, installation timing, or other concerns"
                   ></textarea>
                 </div>
 
-                <div class="form-actions">
-                  <button class="button button-secondary previous-step" type="button">
-                    Back
-                  </button>
-
-                  <button class="button button-primary next-step" type="button">
-                    See preliminary results
-                  </button>
+                <div class="actions">
+                  <button class="btn btn-secondary previous-step" type="button">Back</button>
+                  <button class="btn btn-primary next-step" type="button">See preliminary results</button>
                 </div>
               </section>
 
               <section class="form-step" data-step="3">
                 <h3>Where should we send your assessment?</h3>
-
                 <p class="step-copy">
                   A team member can review the preliminary result and discuss
                   testing or installation verification.
@@ -1885,50 +1622,22 @@
 
                 <div class="field-grid">
                   <div class="field">
-                    <label for="name">
-                      Name <span class="required">*</span>
-                    </label>
-
-                    <input
-                      id="name"
-                      name="name"
-                      type="text"
-                      autocomplete="name"
-                      required
-                    >
+                    <label for="name">Name <span class="required">*</span></label>
+                    <input id="name" name="name" type="text" autocomplete="name" required />
                   </div>
 
                   <div class="field">
-                    <label for="phone">
-                      Phone <span class="required">*</span>
-                    </label>
-
-                    <input
-                      id="phone"
-                      name="phone"
-                      type="tel"
-                      autocomplete="tel"
-                      required
-                    >
+                    <label for="phone">Phone <span class="required">*</span></label>
+                    <input id="phone" name="phone" type="tel" autocomplete="tel" required />
                   </div>
 
                   <div class="field">
-                    <label for="email">
-                      Email <span class="required">*</span>
-                    </label>
-
-                    <input
-                      id="email"
-                      name="email"
-                      type="email"
-                      autocomplete="email"
-                      required
-                    >
+                    <label for="email">Email <span class="required">*</span></label>
+                    <input id="email" name="email" type="email" autocomplete="email" required />
                   </div>
 
                   <div class="field">
                     <label for="timing">Desired timing</label>
-
                     <select id="timing" name="timing">
                       <option value="Researching">Just researching</option>
                       <option value="30 days">Within 30 days</option>
@@ -1939,62 +1648,38 @@
 
                   <div class="field field-full">
                     <label for="priority">What matters most?</label>
-
                     <select id="priority" name="priority">
-                      <option value="Correct treatment">
-                        Correct treatment for the water
-                      </option>
-                      <option value="Lowest upfront cost">
-                        Lowest upfront cost
-                      </option>
-                      <option value="Lowest maintenance">
-                        Lowest ongoing maintenance
-                      </option>
-                      <option value="Strongest treatment package">
-                        Strongest treatment package
-                      </option>
+                      <option value="Correct treatment">Correct treatment for the water</option>
+                      <option value="Lowest upfront cost">Lowest upfront cost</option>
+                      <option value="Lowest maintenance">Lowest ongoing maintenance</option>
+                      <option value="Strongest treatment package">Strongest treatment package</option>
                     </select>
                   </div>
                 </div>
 
                 <div class="choice" style="margin-top: 1.5rem;">
-                  <input id="consent" name="consent" type="checkbox" required>
-
-                  <label for="consent">
-                    I agree to be contacted about this water assessment.
-                  </label>
+                  <input id="consent" name="consent" type="checkbox" required />
+                  <label for="consent">I agree to be contacted about this assessment.</label>
                 </div>
 
-                <input id="recommendationSummary" name="recommendation" type="hidden">
+                <input id="recommendationSummary" name="recommendation" type="hidden" />
 
-                <div class="form-actions">
-                  <button class="button button-secondary previous-step" type="button">
-                    Back
-                  </button>
-
-                  <button class="button button-primary" type="submit">
-                    Submit assessment
-                  </button>
+                <div class="actions">
+                  <button class="btn btn-secondary previous-step" type="button">Back</button>
+                  <button class="btn btn-primary" type="submit">Submit assessment</button>
                 </div>
 
-                <div
-                  id="formMessage"
-                  class="form-message"
-                  role="status"
-                  aria-live="polite"
-                ></div>
+                <div id="formMessage" class="message" role="status" aria-live="polite"></div>
               </section>
             </form>
           </div>
 
-          <aside class="recommendation-panel" aria-live="polite">
-            <h3>Your preliminary profile</h3>
-
+          <aside class="assessment-result-panel" aria-live="polite">
+            <h3 class="result-panel-title">Your preliminary profile</h3>
             <div id="recommendationContent">
-              <p class="recommendation-empty">
+              <p class="result-empty">
                 Complete the assessment to see estimated daily demand,
-                planning hardness, peak-flow tier and possible treatment
-                categories.
+                planning hardness, peak-flow tier, and possible treatment categories.
               </p>
             </div>
           </aside>
@@ -2005,46 +1690,31 @@
     <section class="section" id="process">
       <div class="container">
         <span class="eyebrow">How it works</span>
-
-        <h2 class="section-heading">
-          From water concern to verified solution.
-        </h2>
+        <h2 class="section-title">From water concern to verified solution.</h2>
 
         <div class="process-grid">
-          <article class="process-step">
+          <article class="process-card">
             <span>01</span>
             <h3>Discovery</h3>
-            <p>
-              Identify the water provider, household needs and the customer’s
-              primary concerns.
-            </p>
+            <p>Identify the water provider, household needs, and primary concerns.</p>
           </article>
 
-          <article class="process-step">
+          <article class="process-card">
             <span>02</span>
             <h3>Testing</h3>
-            <p>
-              Measure relevant water characteristics and review utility or
-              laboratory data.
-            </p>
+            <p>Measure relevant water characteristics and review utility or laboratory data.</p>
           </article>
 
-          <article class="process-step">
+          <article class="process-card">
             <span>03</span>
             <h3>Verification</h3>
-            <p>
-              Confirm pressure, available flow, plumbing size, drain, power
-              and installation space.
-            </p>
+            <p>Confirm pressure, available flow, plumbing size, drain, power, and installation space.</p>
           </article>
 
-          <article class="process-step">
+          <article class="process-card">
             <span>04</span>
             <h3>Installation</h3>
-            <p>
-              Final equipment and installation scope are approved before the
-              system is ordered.
-            </p>
+            <p>Approve final equipment and installation scope before the system is ordered.</p>
           </article>
         </div>
       </div>
@@ -2054,63 +1724,55 @@
       <div class="container faq-layout">
         <div>
           <span class="eyebrow">Common questions</span>
-
-          <h2 class="section-heading">
-            Straight answers about home water treatment.
-          </h2>
+          <h2 class="section-title">Straight answers about home water treatment.</h2>
         </div>
 
         <div class="faq-list">
           <details>
             <summary>Does every Denver home need a softener?</summary>
             <div class="faq-answer">
-              No. Denver’s water is generally softer than water in several
-              surrounding communities. Hardness should be measured at the
-              property and evaluated against the customer’s scale and spotting
-              concerns.
+              No. Denver’s water is generally softer than water in several nearby
+              communities. Hardness should be measured at the property and evaluated
+              against actual scale or spotting concerns.
             </div>
           </details>
 
           <details>
             <summary>Is a whole-home filter the same as a softener?</summary>
             <div class="faq-answer">
-              No. Carbon filtration addresses selected tastes, odors and
-              disinfectants. A softener exchanges hardness minerals. Some homes
-              may benefit from one system, both systems or neither.
+              No. Carbon filtration and softening solve different problems. Some homes
+              may benefit from one system, both systems, or neither.
             </div>
           </details>
 
           <details>
             <summary>Can you size a system over the phone?</summary>
             <div class="faq-answer">
-              An intake call can identify a preliminary equipment category and
-              service-flow target. Final selection requires verification of
-              water quality, pressure, flow, plumbing and installation conditions.
+              A call can identify a preliminary equipment category and likely flow target,
+              but final selection requires water testing and installation verification.
             </div>
           </details>
 
           <details>
-            <summary>What about lead, PFAS or other health concerns?</summary>
+            <summary>What about lead, PFAS, or other health concerns?</summary>
             <div class="faq-answer">
-              Health-related concerns require appropriate testing and equipment
-              certified for the specific reduction claim. Taste, odor and TDS
-              readings cannot establish whether water is safe.
+              Health-related concerns require appropriate testing and equipment certified
+              for the specific reduction claim being discussed.
             </div>
           </details>
 
           <details>
             <summary>Do private wells require different treatment?</summary>
             <div class="faq-answer">
-              Yes. Private-well treatment should be based on a certified
-              laboratory analysis and the well pump’s available flow—not a
-              municipal-water average.
+              Yes. Private-well treatment should be based on certified laboratory analysis
+              and the property’s available flow rather than utility averages.
             </div>
           </details>
         </div>
       </div>
     </section>
 
-    <section class="final-cta">
+    <section class="cta">
       <div class="container">
         <div class="cta-card">
           <div>
@@ -2120,26 +1782,18 @@
               profile for your home.
             </p>
           </div>
-
-          <a class="button button-secondary" href="#assessment">
-            Start assessment
-          </a>
+          <a class="btn btn-secondary" href="#assessment">Start assessment</a>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer">
+  <footer class="footer">
     <div class="container">
       <div class="footer-grid">
         <div>
           <a class="brand" href="#top">
-            <svg
-              class="brand-mark"
-              viewBox="0 0 52 52"
-              fill="none"
-              aria-hidden="true"
-            >
+            <svg class="brand-mark" viewBox="0 0 52 52" fill="none" aria-hidden="true">
               <path
                 d="M6 34L18 20L25 27L34 15L46 34"
                 stroke="currentColor"
@@ -2154,94 +1808,63 @@
                 stroke-linecap="round"
               />
             </svg>
-
             <span>Front Range Water Pros</span>
           </a>
 
-          <p class="footer-description">
-            Preliminary water-treatment guidance and equipment solutions for
+          <p class="footer-copy">
+            Preliminary water-treatment guidance and equipment planning for
             Colorado homeowners.
           </p>
         </div>
 
         <div>
-          <p class="footer-heading">Service area</p>
-
+          <p class="footer-title">Service area</p>
           <ul class="footer-list">
             <li>Denver</li>
             <li>Aurora</li>
             <li>Westminster</li>
-            <li>Greater Denver metro</li>
+            <li>Greater Front Range metro</li>
           </ul>
         </div>
 
         <div>
-          <p class="footer-heading">Contact</p>
-
+          <p class="footer-title">Contact</p>
           <ul class="footer-list">
-            <li>
-              <a href="tel:+17200000000">(720) 000-0000</a>
-            </li>
-            <li>
-              <a href="mailto:hello@frontrangewaterpros.com">
-                hello@frontrangewaterpros.com
-              </a>
-            </li>
+            <li><a href="tel:+17200000000">(720) 000-0000</a></li>
+            <li><a href="mailto:hello@frontrangewaterpros.com">hello@frontrangewaterpros.com</a></li>
             <li>Colorado</li>
           </ul>
         </div>
       </div>
 
       <div class="footer-bottom">
-        <p>© <span id="year"></span> Front Range Water Pros.</p>
-
-        <p class="legal-note">
-          Preliminary recommendations are for planning purposes only. Final
-          equipment selection requires water testing and onsite verification.
-          Installation is performed or approved by appropriately licensed
-          installation professionals.
+        <p>© <span id="year"></span> Front Range Water Pros</p>
+        <p class="legal">
+          Preliminary recommendations are for planning purposes only. Final equipment
+          selection requires water testing and onsite verification. Installation is
+          performed or approved by appropriately licensed installation professionals.
         </p>
       </div>
     </div>
   </footer>
 
   <script>
-    /*
-      REQUIRED BEFORE LIVE LEAD COLLECTION
-
-      1. Create a form at https://formspree.io
-      2. Replace REPLACE_ME below with the Formspree form ID.
-      3. Replace the placeholder phone number throughout this file.
-      4. Confirm hello@frontrangewaterpros.com is active.
-    */
-
     const CONFIG = {
       formEndpoint: "https://formspree.io/f/REPLACE_ME",
       fallbackEmail: "hello@frontrangewaterpros.com"
     };
 
     const UTILITY_DATA = {
-      "Denver Water": {
-        hardness: 5.2,
-        label: "Denver Water planning average"
-      },
-      "Aurora Water": {
-        hardness: 8.0,
-        label: "Aurora Water planning average"
-      },
-      "Westminster Water": {
-        hardness: 7.4,
-        label: "Westminster Water planning average"
-      }
+      "Denver Water": { hardness: 5.2, label: "Denver Water planning average" },
+      "Aurora Water": { hardness: 8.0, label: "Aurora Water planning average" },
+      "Westminster Water": { hardness: 7.4, label: "Westminster Water planning average" }
     };
 
     const form = document.getElementById("assessmentForm");
     const steps = [...document.querySelectorAll(".form-step")];
-    const progressSteps = [...document.querySelectorAll(".progress-step")];
-    const recommendationContent =
-      document.getElementById("recommendationContent");
-    const recommendationSummary =
-      document.getElementById("recommendationSummary");
+    const progressBars = [...document.querySelectorAll(".progress-bar")];
+    const recommendationContent = document.getElementById("recommendationContent");
+    const recommendationSummary = document.getElementById("recommendationSummary");
     const formMessage = document.getElementById("formMessage");
 
     let currentStep = 0;
@@ -2249,58 +1872,43 @@
     function showStep(index) {
       currentStep = Math.max(0, Math.min(index, steps.length - 1));
 
-      steps.forEach((step, stepIndex) => {
-        step.classList.toggle("active", stepIndex === currentStep);
+      steps.forEach((step, i) => {
+        step.classList.toggle("active", i === currentStep);
       });
 
-      progressSteps.forEach((bar, barIndex) => {
-        bar.classList.toggle("active", barIndex <= currentStep);
+      progressBars.forEach((bar, i) => {
+        bar.classList.toggle("active", i <= currentStep);
       });
 
-      formMessage.className = "form-message";
+      formMessage.className = "message";
       formMessage.textContent = "";
-
-      document
-        .getElementById("assessment")
-        .scrollIntoView({ behavior: "smooth", block: "start" });
-
       updateRecommendation();
     }
 
     function validateCurrentStep() {
-      const currentFields = [
-        ...steps[currentStep].querySelectorAll("input, select, textarea")
-      ];
-
-      for (const field of currentFields) {
+      const fields = [...steps[currentStep].querySelectorAll("input, select, textarea")];
+      for (const field of fields) {
         if (!field.checkValidity()) {
           field.reportValidity();
           field.focus();
           return false;
         }
       }
-
       return true;
     }
 
-    document.querySelectorAll(".next-step").forEach((button) => {
-      button.addEventListener("click", () => {
-        if (validateCurrentStep()) {
-          showStep(currentStep + 1);
-        }
+    document.querySelectorAll(".next-step").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        if (validateCurrentStep()) showStep(currentStep + 1);
       });
     });
 
-    document.querySelectorAll(".previous-step").forEach((button) => {
-      button.addEventListener("click", () => {
-        showStep(currentStep - 1);
-      });
+    document.querySelectorAll(".previous-step").forEach((btn) => {
+      btn.addEventListener("click", () => showStep(currentStep - 1));
     });
 
     function selectedValues(name) {
-      return [
-        ...form.querySelectorAll(`input[name="${name}"]:checked`)
-      ].map((input) => input.value);
+      return [...form.querySelectorAll(`input[name="${name}"]:checked`)].map((input) => input.value);
     }
 
     function getUtilityProfile() {
@@ -2309,15 +1917,10 @@
       const source = document.getElementById("waterSource").value;
 
       if (source === "well") {
-        return {
-          hardness: null,
-          label: "Private-well testing required"
-        };
+        return { hardness: null, label: "Private-well testing required" };
       }
 
-      if (UTILITY_DATA[utility]) {
-        return UTILITY_DATA[utility];
-      }
+      if (UTILITY_DATA[utility]) return UTILITY_DATA[utility];
 
       const cityDefaults = {
         Denver: UTILITY_DATA["Denver Water"],
@@ -2325,48 +1928,35 @@
         Westminster: UTILITY_DATA["Westminster Water"]
       };
 
-      return cityDefaults[city] || {
-        hardness: null,
-        label: "Utility or onsite result needed"
-      };
+      return cityDefaults[city] || { hardness: null, label: "Utility or onsite result needed" };
     }
 
     function calculatePeakFlow() {
-      const bathrooms =
-        Number(document.getElementById("bathrooms").value) || 1;
-      const simultaneous =
-        Number(document.getElementById("simultaneousShowers").value) || 1;
+      const bathrooms = Number(document.getElementById("bathrooms").value) || 1;
+      const showers = Number(document.getElementById("simultaneousShowers").value) || 1;
 
       let peak = 7;
-
       peak += Math.max(0, bathrooms - 2) * 1.5;
-      peak += Math.max(0, simultaneous - 1) * 2.5;
+      peak += Math.max(0, showers - 1) * 2.5;
 
-      if (document.getElementById("largeTub").checked) {
-        peak += 2;
-      }
-
-      if (document.getElementById("bodySprays").checked) {
-        peak += 3;
-      }
+      if (document.getElementById("largeTub").checked) peak += 2;
+      if (document.getElementById("bodySprays").checked) peak += 3;
 
       return Math.ceil(peak);
     }
 
-    function getTreatmentCandidates(concerns, waterSource, hardness) {
-      const treatments = [];
+    function getTreatmentCandidates(concerns, source, hardness) {
+      const items = [];
 
-      if (
-        concerns.includes("Chlorine taste or odor")
-      ) {
-        treatments.push("Whole-home carbon filtration");
+      if (concerns.includes("Chlorine taste or odor")) {
+        items.push("Whole-home carbon filtration");
       }
 
       if (concerns.includes("Scale and water spots")) {
         if (hardness !== null && hardness >= 7) {
-          treatments.push("Metered water softener");
+          items.push("Metered water softener");
         } else {
-          treatments.push("Onsite hardness test before softener selection");
+          items.push("Onsite hardness test before softener selection");
         }
       }
 
@@ -2375,173 +1965,29 @@
         concerns.includes("Lead concern") ||
         concerns.includes("PFAS concern")
       ) {
-        treatments.push(
-          "Certified point-of-use drinking-water treatment"
-        );
+        items.push("Certified point-of-use drinking-water treatment");
       }
 
       if (concerns.includes("Sediment, sand or rust")) {
-        treatments.push("Sediment filtration and source diagnosis");
+        items.push("Sediment filtration and source diagnosis");
       }
 
       if (
         concerns.includes("Orange or black staining") ||
         concerns.includes("Rotten-egg odor")
       ) {
-        treatments.push(
-          "Laboratory testing for iron, manganese and sulfur conditions"
-        );
+        items.push("Laboratory testing for iron, manganese, or sulfur conditions");
       }
 
-      if (waterSource === "well") {
-        treatments.unshift(
-          "Certified private-well laboratory analysis before equipment selection"
-        );
+      if (source === "well") {
+        items.unshift("Certified private-well laboratory analysis before equipment selection");
       }
 
-      if (!treatments.length) {
-        treatments.push(
-          "Water consultation and onsite testing before treatment selection"
-        );
+      if (!items.length) {
+        items.push("Water consultation and onsite testing before treatment selection");
       }
 
-      return [...new Set(treatments)];
-    }
-
-    function updateRecommendation() {
-      const occupants =
-        Number(document.getElementById("occupants").value) || 0;
-      const source = document.getElementById("waterSource").value;
-      const utilityProfile = getUtilityProfile();
-      const concerns = selectedValues("concerns");
-      const dailyGallons = occupants ? occupants * 50 : 0;
-      const peakFlow = calculatePeakFlow();
-
-      const hardnessLoad =
-        utilityProfile.hardness !== null && dailyGallons
-          ? Math.round(dailyGallons * utilityProfile.hardness)
-          : null;
-
-      const eightDayCapacity =
-        hardnessLoad !== null ? hardnessLoad * 8 : null;
-
-      const treatmentCandidates = getTreatmentCandidates(
-        concerns,
-        source,
-        utilityProfile.hardness
-      );
-
-      let softenerClass = "Not yet indicated";
-
-      if (eightDayCapacity !== null && concerns.includes("Scale and water spots")) {
-        if (eightDayCapacity <= 10000) {
-          softenerClass =
-            "Approximately 1.0 cu. ft. candidate; verify usable capacity";
-        } else if (eightDayCapacity <= 18000) {
-          softenerClass =
-            "Approximately 1.5 cu. ft. candidate; verify usable capacity";
-        } else {
-          softenerClass =
-            "Approximately 2.0+ cu. ft. candidate; technical review required";
-        }
-      }
-
-      const treatmentHtml = treatmentCandidates
-        .map((item) => `<li>${escapeHtml(item)}</li>`)
-        .join("");
-
-      recommendationContent.innerHTML = `
-        <div class="recommendation-list">
-          <div class="recommendation-card">
-            <span class="recommendation-label">Planning water profile</span>
-            <div class="recommendation-value">
-              ${escapeHtml(utilityProfile.label)}
-            </div>
-            <div class="recommendation-detail">
-              ${
-                utilityProfile.hardness !== null
-                  ? `${utilityProfile.hardness.toFixed(1)} GPG planning hardness`
-                  : "Property-specific result required"
-              }
-            </div>
-          </div>
-
-          <div class="recommendation-card">
-            <span class="recommendation-label">Estimated indoor volume</span>
-            <div class="recommendation-value">
-              ${dailyGallons ? `${dailyGallons} gallons/day` : "Enter occupants"}
-            </div>
-            <div class="recommendation-detail">
-              Preliminary estimate using 50 gallons per occupant per day.
-            </div>
-          </div>
-
-          <div class="recommendation-card">
-            <span class="recommendation-label">Preliminary peak-flow target</span>
-            <div class="recommendation-value">At least ${peakFlow} GPM</div>
-            <div class="recommendation-detail">
-              Must be confirmed through fixture and onsite flow evaluation.
-            </div>
-          </div>
-
-          <div class="recommendation-card">
-            <span class="recommendation-label">Daily hardness load</span>
-            <div class="recommendation-value">
-              ${
-                hardnessLoad !== null
-                  ? `${hardnessLoad.toLocaleString()} grains/day`
-                  : "Measurement required"
-              }
-            </div>
-            <div class="recommendation-detail">
-              Based on estimated indoor use and planning hardness.
-            </div>
-          </div>
-
-          <div class="recommendation-card">
-            <span class="recommendation-label">Softener sizing candidate</span>
-            <div class="recommendation-value">${escapeHtml(softenerClass)}</div>
-            <div class="recommendation-detail">
-              Nominal labels do not equal efficient usable capacity.
-            </div>
-          </div>
-
-          <div class="recommendation-card">
-            <span class="recommendation-label">Categories to evaluate</span>
-            <ul style="padding-left: 1.1rem; margin-top: 0.4rem;">
-              ${treatmentHtml}
-            </ul>
-          </div>
-        </div>
-
-        <div class="verification-notice">
-          Preliminary only. Final selection requires onsite water testing,
-          available-flow and pressure checks, plumbing inspection, drain and
-          power verification, manufacturer specifications and installer approval.
-        </div>
-      `;
-
-      const summary = [
-        `Water profile: ${utilityProfile.label}`,
-        `Planning hardness: ${
-          utilityProfile.hardness !== null
-            ? `${utilityProfile.hardness.toFixed(1)} GPG`
-            : "Testing required"
-        }`,
-        `Estimated indoor use: ${
-          dailyGallons ? `${dailyGallons} gallons/day` : "Unknown"
-        }`,
-        `Preliminary peak-flow target: ${peakFlow} GPM`,
-        `Daily hardness load: ${
-          hardnessLoad !== null
-            ? `${hardnessLoad} grains/day`
-            : "Testing required"
-        }`,
-        `Softener candidate: ${softenerClass}`,
-        `Treatment categories: ${treatmentCandidates.join("; ")}`
-      ].join("\n");
-
-      recommendationSummary.value = summary;
+      return [...new Set(items)];
     }
 
     function escapeHtml(value) {
@@ -2553,15 +1999,136 @@
         .replaceAll("'", "&#039;");
     }
 
+    function updateRecommendation() {
+      const occupants = Number(document.getElementById("occupants").value) || 0;
+      const source = document.getElementById("waterSource").value;
+      const utilityProfile = getUtilityProfile();
+      const concerns = selectedValues("concerns");
+
+      const dailyGallons = occupants ? occupants * 50 : 0;
+      const peakFlow = calculatePeakFlow();
+      const hardnessLoad =
+        utilityProfile.hardness !== null && dailyGallons
+          ? Math.round(dailyGallons * utilityProfile.hardness)
+          : null;
+
+      const eightDayCapacity = hardnessLoad !== null ? hardnessLoad * 8 : null;
+
+      const treatmentCandidates = getTreatmentCandidates(
+        concerns,
+        source,
+        utilityProfile.hardness
+      );
+
+      let softenerClass = "Not yet indicated";
+
+      if (eightDayCapacity !== null && concerns.includes("Scale and water spots")) {
+        if (eightDayCapacity <= 10000) {
+          softenerClass = "Approximately 1.0 cu. ft. candidate; verify usable capacity";
+        } else if (eightDayCapacity <= 18000) {
+          softenerClass = "Approximately 1.5 cu. ft. candidate; verify usable capacity";
+        } else {
+          softenerClass = "Approximately 2.0+ cu. ft. candidate; technical review required";
+        }
+      }
+
+      const treatmentHtml = treatmentCandidates
+        .map((item) => `<li>${escapeHtml(item)}</li>`)
+        .join("");
+
+      recommendationContent.innerHTML = `
+        <div class="result-list">
+          <div class="result-card">
+            <span class="result-label">Planning water profile</span>
+            <div class="result-value">${escapeHtml(utilityProfile.label)}</div>
+            <div class="result-detail">
+              ${
+                utilityProfile.hardness !== null
+                  ? `${utilityProfile.hardness.toFixed(1)} GPG planning hardness`
+                  : "Property-specific result required"
+              }
+            </div>
+          </div>
+
+          <div class="result-card">
+            <span class="result-label">Estimated indoor volume</span>
+            <div class="result-value">
+              ${dailyGallons ? `${dailyGallons} gallons/day` : "Enter occupants"}
+            </div>
+            <div class="result-detail">
+              Preliminary estimate using 50 gallons per occupant per day.
+            </div>
+          </div>
+
+          <div class="result-card">
+            <span class="result-label">Preliminary peak-flow target</span>
+            <div class="result-value">At least ${peakFlow} GPM</div>
+            <div class="result-detail">
+              Must be confirmed through fixture and onsite flow evaluation.
+            </div>
+          </div>
+
+          <div class="result-card">
+            <span class="result-label">Daily hardness load</span>
+            <div class="result-value">
+              ${
+                hardnessLoad !== null
+                  ? `${hardnessLoad.toLocaleString()} grains/day`
+                  : "Measurement required"
+              }
+            </div>
+            <div class="result-detail">
+              Based on estimated indoor use and planning hardness.
+            </div>
+          </div>
+
+          <div class="result-card">
+            <span class="result-label">Softener sizing candidate</span>
+            <div class="result-value">${escapeHtml(softenerClass)}</div>
+            <div class="result-detail">
+              Nominal labels do not equal efficient usable capacity.
+            </div>
+          </div>
+
+          <div class="result-card">
+            <span class="result-label">Categories to evaluate</span>
+            <ul style="padding-left: 1.1rem; margin-top: 0.35rem;">
+              ${treatmentHtml}
+            </ul>
+          </div>
+        </div>
+
+        <div class="notice">
+          Preliminary only. Final selection requires onsite water testing,
+          available-flow and pressure checks, plumbing inspection, drain and
+          power verification, manufacturer specifications, and installer approval.
+        </div>
+      `;
+
+      recommendationSummary.value = [
+        `Water profile: ${utilityProfile.label}`,
+        `Planning hardness: ${
+          utilityProfile.hardness !== null
+            ? `${utilityProfile.hardness.toFixed(1)} GPG`
+            : "Testing required"
+        }`,
+        `Estimated indoor use: ${dailyGallons ? `${dailyGallons} gallons/day` : "Unknown"}`,
+        `Preliminary peak-flow target: ${peakFlow} GPM`,
+        `Daily hardness load: ${
+          hardnessLoad !== null ? `${hardnessLoad} grains/day` : "Testing required"
+        }`,
+        `Softener candidate: ${softenerClass}`,
+        `Treatment categories: ${treatmentCandidates.join("; ")}`
+      ].join("\n");
+    }
+
     form.addEventListener("input", updateRecommendation);
     form.addEventListener("change", updateRecommendation);
 
     form.addEventListener("submit", async (event) => {
       event.preventDefault();
 
-      if (!validateCurrentStep()) {
-        return;
-      }
+      if (!validateCurrentStep()) return;
 
       updateRecommendation();
 
@@ -2576,17 +2143,13 @@
       );
       formData.append("_subject", "New Front Range Water Pros assessment");
 
-      const endpointIsConfigured =
-        CONFIG.formEndpoint &&
-        !CONFIG.formEndpoint.includes("REPLACE_ME");
+      const endpointReady =
+        CONFIG.formEndpoint && !CONFIG.formEndpoint.includes("REPLACE_ME");
 
-      if (!endpointIsConfigured) {
-        formMessage.className = "form-message error";
-        formMessage.innerHTML = `
-          Preview mode: the assessment works, but lead delivery is not
-          configured. Create a Formspree form and replace
-          <strong>REPLACE_ME</strong> in the CONFIG section.
-        `;
+      if (!endpointReady) {
+        formMessage.className = "message error";
+        formMessage.innerHTML =
+          'Preview mode: lead delivery is not configured yet. Replace <strong>REPLACE_ME</strong> in the Formspree URL inside the script.';
         return;
       }
 
@@ -2600,58 +2163,27 @@
         const response = await fetch(CONFIG.formEndpoint, {
           method: "POST",
           body: formData,
-          headers: {
-            Accept: "application/json"
-          }
+          headers: { Accept: "application/json" }
         });
 
-        if (!response.ok) {
-          throw new Error("Submission failed");
-        }
+        if (!response.ok) throw new Error("Submission failed");
 
-        formMessage.className = "form-message success";
+        formMessage.className = "message success";
         formMessage.textContent =
           "Thank you. Your assessment was received. We’ll review it and follow up shortly.";
 
         submitButton.textContent = "Assessment submitted";
-        submitButton.disabled = true;
       } catch (error) {
-        formMessage.className = "form-message error";
+        formMessage.className = "message error";
         formMessage.textContent =
           `We could not submit the form. Please email ${CONFIG.fallbackEmail}.`;
-
         submitButton.disabled = false;
         submitButton.textContent = originalText;
       }
     });
 
-    const menuToggle = document.getElementById("menuToggle");
-    const navLinks = document.getElementById("navLinks");
-
-    menuToggle.addEventListener("click", () => {
-      const isOpen = navLinks.classList.toggle("open");
-
-      menuToggle.setAttribute("aria-expanded", String(isOpen));
-      menuToggle.setAttribute(
-        "aria-label",
-        isOpen ? "Close navigation" : "Open navigation"
-      );
-
-      document.body.classList.toggle("menu-open", isOpen);
-    });
-
-    navLinks.querySelectorAll("a").forEach((link) => {
-      link.addEventListener("click", () => {
-        navLinks.classList.remove("open");
-        menuToggle.setAttribute("aria-expanded", "false");
-        menuToggle.setAttribute("aria-label", "Open navigation");
-        document.body.classList.remove("menu-open");
-      });
-    });
-
-    const themeToggle = document.getElementById("themeToggle");
     const root = document.documentElement;
-
+    const themeToggle = document.getElementById("themeToggle");
     let currentTheme = window.matchMedia("(prefers-color-scheme: dark)").matches
       ? "dark"
       : "light";
@@ -2661,14 +2193,26 @@
     themeToggle.addEventListener("click", () => {
       currentTheme = currentTheme === "dark" ? "light" : "dark";
       root.setAttribute("data-theme", currentTheme);
-      themeToggle.setAttribute(
-        "aria-label",
-        `Switch to ${currentTheme === "dark" ? "light" : "dark"} theme`
-      );
     });
 
-    document.getElementById("year").textContent =
-      new Date().getFullYear();
+    const menuToggle = document.getElementById("menuToggle");
+    const navLinks = document.getElementById("navLinks");
+
+    menuToggle.addEventListener("click", () => {
+      const open = navLinks.classList.toggle("open");
+      menuToggle.setAttribute("aria-expanded", String(open));
+      menuToggle.setAttribute("aria-label", open ? "Close navigation" : "Open navigation");
+    });
+
+    navLinks.querySelectorAll("a").forEach((link) => {
+      link.addEventListener("click", () => {
+        navLinks.classList.remove("open");
+        menuToggle.setAttribute("aria-expanded", "false");
+        menuToggle.setAttribute("aria-label", "Open navigation");
+      });
+    });
+
+    document.getElementById("year").textContent = new Date().getFullYear();
 
     updateRecommendation();
   </script>
